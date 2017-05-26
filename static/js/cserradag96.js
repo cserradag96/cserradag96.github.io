@@ -15,13 +15,13 @@ cserradag96.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         // Main screen
         .state("main", {
-            url         : "/",
+            url         : "",
             templateUrl : "views/main/main.html",
             controller  : "MainController"
         })
 
     // Wrong url
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise("");
 
 });
 
