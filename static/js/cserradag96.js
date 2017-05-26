@@ -28,6 +28,6 @@ cserradag96.config(function($stateProvider, $urlRouterProvider) {
 /*#########################################################################################################################################################################################################################
 # INITIAL GLOBAL SETTINGS
 #########################################################################################################################################################################################################################*/
-cserradag96.run(function ($rootScope, $auth) {
-    $rootScope.baseURL        = "http://cserradag96.github.io/";        /* Server domain */
+cserradag96.run(function ($rootScope) {
+    $rootScope.baseURL = "http://cserradag96.github.io/";        /* Server domain */
 });
