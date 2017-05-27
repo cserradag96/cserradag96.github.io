@@ -29,7 +29,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider) {
 # INITIAL GLOBAL SETTINGS
 #########################################################################################################################################################################################################################*/
 cserradag96.run(function ($rootScope) {
-    $rootScope.baseURL  = "https://cserradag96.github.io/";       /* Server domain */
+    $rootScope.baseURL  = "//cserradag96.github.io/";             /* Server domain */
     $rootScope.apiURL   = $rootScope.baseURL + "static/apis/";    /* Server domain */
     $rootScope.lenguage = "es";                                   /* Default lenguage */
 });
