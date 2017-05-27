@@ -10,7 +10,7 @@ cserradag96.controller('MainController', function($scope, $rootScope, $http) {
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     // GET Test function
 
-    $http.get($rootScope.apiURL + $rootScope.lenguage + 'test.json').then(
+    $http.get($rootScope.apiURL + $rootScope.lenguage + '/test.json').then(
         function successCallback(response) { $scope.test = response.data; },
         function errorCallback(response) {}
     );
