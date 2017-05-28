@@ -7,12 +7,24 @@
     display: table;
 }
 
-.paralax-title {
-    color: #FFFFFF;
-    font-size: 50pt;
-    margin: 0px;
-    text-transform: uppercase;
-    text-align: center;
+.parallax-content {
     vertical-align: middle;
     display: table-cell;
+}
+
+.parallax-content > h1, .parallax-content > h2, .parallax-content > h3, .parallax-content > h4, .parallax-content > h5, .parallax-content > h6, .parallax-content > span {
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6   { font-family: Montserrat; }
+.parallax-content > span { font-family: Pacifico; font-size: 24pt; }
+
+.navbar-brand { color: #FFFFFF; font-family: Montserrat; font-weight: 700;  text-transform: uppercase; text-decoration: none; }
+
+.nav > li > a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: Montserrat;
 }
