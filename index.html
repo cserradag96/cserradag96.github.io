@@ -7,14 +7,35 @@
     <title>Carlos Serrada</title>                                                                                      <!-- Site title -->
     <link rel="stylesheet" href="static/css/please-wait.css">                                                          <!-- Plese wait extension-->
     <link rel="stylesheet" href="static/css/three-bounce.css">                                                         <!-- Bounce animation for please wait extension -->
-    <link rel="stylesheet" href="static/css/angular-material.min.css">                                                 <!-- Material angular style -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">                                                        <!-- Bootstrap style -->
+    <link rel="stylesheet" href="static/css/custom.css">                                                              <!-- Custom style -->
+
   </head>
-  <body ng-controller="MainController">
+  <body ng-controller="MainController" ng-cloak layout="column">
     <!-- ######################### -->
     <!-- Start please wait window  -->
     <!-- ######################### -->
     <script src="static/js/shared/please-wait/please-wait.min.js"></script>
     <script src="static/js/shared/please-wait/start-please-wait.js"></script>
+
+    <section class="header">
+      <div class="parallax">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><strong>Cserradag96</strong></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Acerca de mi</a></li>
+              <li><a href="#">Proyectos</a></li>
+              <li><a href="#">Contáctame</a></li>
+              <li><a href="#">Cambiar idioma</a></li>
+            </ul>
+          </div>
+        </nav>
+        <span class="paralax-title">Carlos Serrada</span>
+      </div>
+    </section>
 
     <!-- Views -->
     <div class="container-fluid" ui-view></div>
@@ -29,7 +50,6 @@
     <script src="static/js/shared/angular/angular-aria.min.js"></script>                    <!-- Angular -->
     <script src="static/js/shared/angular/angular-messages.min.js"></script>                <!-- Angular -->
     <script src="static/js/shared/angular/angular-ui-router.min.js"></script>               <!-- Angular ui-router component -->
-    <script src="static/js/shared/angular/angular-material.min.js"></script>                <!-- Material Angular -->
 
     <!-- ######################### -->
     <!--      Angular modules      -->
