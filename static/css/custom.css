@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 { font-family: Montserrat; }
 
 .navbar-scroll { background: #FFFFFF; }
 .navbar-brand-scroll, .nav-scroll > li > a { color: #000000; }
-.navbar-brand-scroll:hover, .navbar-brand-scroll:focus, .nav-scroll > li > a:hover, .nav-scroll > li > a:focus { color: #000000; box-shadow: none; background: #F5F5F5; }
+.navbar-brand-scroll:hover, .navbar-brand-scroll:focus, .nav-scroll > li > a:hover, .nav-scroll > li > a:focus { color: #000000; box-shadow: none; background: #EEEEEE; }
 
 /************************************/
 /*  Social media buttons            */
