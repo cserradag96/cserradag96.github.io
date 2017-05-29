@@ -79,3 +79,4 @@ section { padding: 1em; }
 /************************************/
 
 .social-btn { color: #FFFFFF; text-decoration: none; }
+.social-btn:hover, .social-btn:focus { color: #2196F3; }
