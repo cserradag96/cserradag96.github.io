@@ -3,7 +3,8 @@
 /************************************/
 
 body    { display: flex; min-height: 100vh; flex-direction: column; }
-section { padding-top: 0.5em; padding-bottom: 0.5em; }
+section { padding-top: 0.5em; padding-bottom: 0.5em; margin: 0px;}
+section > h2 { text-transform: uppercase; text-align: center; }
 h1, h2, h3, h4, h5, h6 { font-family: Montserrat; }
 
 /************************************/
@@ -72,12 +73,6 @@ h1, h2, h3, h4, h5, h6 { font-family: Montserrat; }
 .navbar-scroll { background: #FFFFFF; }
 .navbar-brand-scroll, .nav-scroll > li > a { color: #000000; }
 .navbar-brand-scroll:hover, .navbar-brand-scroll:focus, .nav-scroll > li > a:hover, .nav-scroll > li > a:focus { color: #000000; box-shadow: none; background: #F5F5F5; }
-
-/************************************/
-/*  Footer                          */
-/************************************/
-
-.footer > h2 { color: #FFFFFF; text-transform: uppercase; text-align: center; }
 
 /************************************/
 /*  Social media buttons            */
