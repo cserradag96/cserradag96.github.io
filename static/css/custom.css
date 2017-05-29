@@ -2,7 +2,15 @@
 /*  Elements                        */
 /************************************/
 
+body    { display: flex; min-height: 100vh; flex-direction: column; }
 section { padding: 1em; }
+
+/************************************/
+/*  Content                         */
+/************************************/
+
+.main-content { flex: 1; }
+
 
 /************************************/
 /*  Color themes                    */
