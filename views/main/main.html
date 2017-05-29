@@ -1,24 +1,91 @@
+<!-- Header -->
+<section class="header parallax">
+  <nav class="navbar navbar-fixed-top hidden-xs">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">cserradag96</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a translate="about_me" href="#"></a></li>
+        <li><a translate="skills" href="#"></a></li>
+        <li><a translate="experience" href="#"></a></li>
+        <li><a translate="projects" href="#"></a></li>
+        <li><a translate="contact_me" href="#"></a></li>
+        <li><a translate="lang" href="#" ng-click="changeLang()"><i class="fa fa-globe" aria-hidden="true"></i> English</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="rox parallax-content" id="startchange">
+    <span translate="main_text0"></span>
+    <h1  translate="main_text1"></h1>
+  </div>
+</section>
+
+<!-- About me section -->
 <section class="bg-light">
-  <h2>Acerca de mi</h2>
+  <h2 translate="about_me"></h2>
   <div class="container-fluid">
     <div class="col-md-4 col-xs-12">
     </div>
     <div class="col-md-8 col-xs-12">
-      <p>Hola</p>
+      <h5>Hola</h5>
     </div>
   </div>
 </section>
 
-</section>
-
+<!-- Skills section -->
 <section class="bg-white">
-<h2>Habilidades</h2>
+<h2 translate="skills"></h2>
 </section>
 
+<!-- Experience section -->
 <section class="bg-light">
-<h2>Experiencia</h2>
+<h2 translate="experience"></h2>
 </section>
 
+<!-- Projects section -->
 <section class="bg-white">
-<h2>Proyectos</h2>
+<h2 translate="projects"></h2>
+</section>
+
+<!-- Footer -->
+<section class="footer bg-dark">
+  <h2 translate="contact_me"></h2>
+  <div class="container-fluid">
+    <div class="col-md-4 col-xs-12">
+      <h3 translate="contact_me_text0" class="text-center"></h3>
+      <form name="messageForm" ng-submit="sendMessage()" method="post">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <input required type="text" class="form-control" placeholder="Nombre" ng-model="sender.name">
+          <span class="input-group-addon"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <input required type="email" class="form-control" placeholder="Correo electrónico" ng-model="sender.email">
+          <span class="input-group-addon"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-edit" aria-hidden="true"></i></span>
+          <textarea required rows="4" class="form-control" placeholder="Escriba un mensaje..."" ng-model="sender.message"></textarea>
+          <span class="input-group-addon"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
+        </div>
+        <button translate="submit" type="submit" class="btn btn-default btn-flat pull-left"></button>
+      </form>
+    </div>
+    <div class="text-center col-md-4 col-xs-12">
+      <h3 translate="contact_me_text4"></h3>
+      <a type="button" class="social-btn" href="https://br.linkedin.com/in/cserradag96"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+      <a type="button" class="social-btn" href="https://github.com/cserradag96"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+      <a type="button" class="social-btn" href="https://twitter.com/cserradag96"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+    </div>
+    <div class="text-center col-md-4 col-xs-12">
+      <h3 translate="contact_me_text5"></h3>
+      <h4 translate="contact_me_text6"></h4>
+      <h4 translate="contact_me_text7"></h4>
+      <a type="button" class="social-btn" href="https://paypal.me/cserradag96" style="padding-right: 1em;"><i class="fa fa-cc-paypal fa-3x" aria-hidden="true"></i></a>
+      <a type="button" class="social-btn" href="/static/img/donate/bitcoin.png"><i class="fa fa-btc fa-3x" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <div class="text-center">Copyright &#169; 2017 Carlos Serrada</div>
 </section>

@@ -20,91 +20,34 @@
     <link rel="stylesheet" href="static/css/custom.css">                                                               <!-- Custom style -->
 
   </head>
-  <body ng-controller="MainController" ng-cloak layout="column">
+  <body ng-controller="MainController" ng-cloak>
     <!-- ######################### -->
     <!-- Start please wait window  -->
     <!-- ######################### -->
     <script src="static/js/shared/please-wait/please-wait.min.js"></script>
     <script src="static/js/shared/please-wait/start-please-wait.js"></script>
 
-    <section class="header parallax">
-      <nav class="navbar navbar-fixed-top hidden-xs">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Cserradag96</a>
-          </div>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Acerca de mi</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Experiencia</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contáctame</a></li>
-            <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i> English</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="rox parallax-content" id="startchange">
-        <span>¡Bienvenido!</span>
-        <h1>Me llamo <strong>Carlos Serrada</strong>, y éste es mi portafolio</h1>
-      </div>
-    </section>
-
-    <!-- Views -->
+    <!-- ######################### -->
+    <!--           Views           -->
+    <!-- ######################### -->
     <div class="main-content" ui-view></div>
 
-    <!-- Footer -->
-    <section class="footer bg-dark">
-      <h2>Información de contacto</h2>
-      <div class="container-fluid">
-        <div class="col-md-4 col-xs-12">
-          <h3 class="text-center">Escribeme</h3>
-          <form name="messageForm" ng-submit="sendMessage()" method="post">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-              <input required type="text" class="form-control" placeholder="Nombre" ng-model="sender.name">
-              <span class="input-group-addon"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-              <input required type="email" class="form-control" placeholder="Correo electrónico" ng-model="sender.email">
-              <span class="input-group-addon"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-edit" aria-hidden="true"></i></span>
-              <textarea required rows="4" class="form-control" placeholder="Escriba un mensaje..."" ng-model="sender.message"></textarea>
-              <span class="input-group-addon"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
-            </div>
-            <button type="submit" class="btn btn-default btn-flat pull-left">Enviar</button>
-          </form>
-        </div>
-        <div class="text-center col-md-4 col-xs-12">
-          <h3>Sigueme</h3>
-          <a type="button" class="social-btn" href="https://br.linkedin.com/in/cserradag96"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-          <a type="button" class="social-btn" href="https://github.com/cserradag96"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-          <a type="button" class="social-btn" href="https://twitter.com/cserradag96"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-        </div>
-        <div class="text-center col-md-4 col-xs-12">
-          <h3>Ayúdame a mejorar el sitio</h3>
-          <h4>Por favor hazme saber tus sugerencias, tus comentarios y los errores que encuentres haciendo click <a href="https://github.com/cserradag96/cserradag96.github.io/issues">aquí</a></h4>
-          <h4>Sí te ha gustado mi trabajo puedes ayudarme a seguir investigando haciendo una donación</h4>
-          <a type="button" class="social-btn" href="https://paypal.me/cserradag96" style="padding-right: 1em;"><i class="fa fa-cc-paypal fa-3x" aria-hidden="true"></i></a>
-          <a type="button" class="social-btn" href="/static/img/donate/bitcoin.png"><i class="fa fa-btc fa-3x" aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <div class="text-center">Copyright &#169; 2017 Carlos Serrada</div>
-    </section>
+    <!-- ######################### -->
+    <!--    Basic liraries         -->
+    <!-- ######################### -->
+    <script src="static/js/shared/jquery/jquery.min.js"></script>                           <!-- jQuery 3.2.1 -->
+    <script src="static/js/shared/bootstrap/bootstrap.min.js"></script>                     <!-- Bootstrap 3.3.6 -->
 
     <!-- ######################### -->
-    <!--    JavaScript liraries    -->
+    <!--    Angular liraries    -->
     <!-- ######################### -->
-    <script src="static/js/shared/jquery/jquery.min.js"></script>                           <!-- jQuery 2.2.3 -->
-    <script src="static/js/shared/bootstrap/bootstrap.min.js"></script>                     <!-- Bootstrap 3.3.6 -->
-    <script src="static/js/shared/custom/custom.js"></script>
     <script src="static/js/shared/angular/angular.min.js"></script>                         <!-- Angular 1.6.4 -->
     <script src="static/js/shared/angular/angular-animate.min.js"></script>                 <!-- Angular animations -->
     <script src="static/js/shared/angular/angular-aria.min.js"></script>                    <!-- Angular -->
     <script src="static/js/shared/angular/angular-messages.min.js"></script>                <!-- Angular -->
     <script src="static/js/shared/angular/angular-ui-router.min.js"></script>               <!-- Angular ui-router component -->
+    <script src="static/js/shared/angular/angular-translate.min.js"></script>               <!-- Angular translate component -->
+    <script src="static/js/shared/angular/angular-sanitize.min.js"></script>                <!-- Angular sanitize component -->
 
     <!-- ######################### -->
     <!--      Angular modules      -->
@@ -120,6 +63,11 @@
     <!-- Finish please wait window -->
     <!-- ######################### -->
     <script src="static/js/shared/please-wait/finish-please-wait.js"></script>
+
+    <!-- ######################### -->
+    <!--    Site Scripts           -->
+    <!-- ######################### -->
+    <script src="static/js/shared/custom/main.js"></script>
 
   </body>
 </html>

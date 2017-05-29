@@ -1,0 +1,13 @@
+[
+    {
+        "sections" : ["acerca de mi", "habilidades", "experiencia", "proyectos", "contactame", "english"]
+    },
+
+    {
+        "section" : "main",
+        "text0"   : "¡Bienvenido!",
+        "text1"   : "Me llamo",
+        "text2"   : "Carlos Serrada",
+        "text3"   : "y éste es mi portafolio",
+    }
+]
