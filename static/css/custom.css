@@ -3,14 +3,14 @@
 /************************************/
 
 body    { display: flex; min-height: 100vh; flex-direction: column; }
-section { padding: 1em; }
+section { padding-top: 0.5em; padding-bottom: 0.5em; }
+h1, h2, h3, h4, h5, h6 { font-family: Montserrat; }
 
 /************************************/
 /*  Content                         */
 /************************************/
 
 .main-content { flex: 1; }
-
 
 /************************************/
 /*  Color themes                    */
@@ -42,7 +42,6 @@ section { padding: 1em; }
 
 .parallax-content > h1, .parallax-content > h2, .parallax-content > h3, .parallax-content > h4, .parallax-content > h5, .parallax-content > h6, .parallax-content > span {
     color: #FFFFFF;
-    font-family: Montserrat;
     text-align: center;
     display: block;
 }
@@ -75,8 +74,22 @@ section { padding: 1em; }
 .navbar-brand-scroll:hover, .navbar-brand-scroll:focus, .nav-scroll > li > a:hover, .nav-scroll > li > a:focus { color: #000000; box-shadow: none; background: #F5F5F5; }
 
 /************************************/
+/*  Footer                          */
+/************************************/
+
+.footer > h2 { color: #FFFFFF; text-transform: uppercase; text-align: center; }
+
+/************************************/
 /*  Social media buttons            */
 /************************************/
 
 .social-btn { color: #FFFFFF; text-decoration: none; }
 .social-btn:hover, .social-btn:focus { color: #2196F3; }
+
+/************************************/
+/*  Forms                           */
+/************************************/
+
+.input-group-addon > .fa-asterisk { color: #D50000; }
+form > * { padding-top: 0.2em; padding-bottom: 0.2em;}
+
