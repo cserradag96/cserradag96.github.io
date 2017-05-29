@@ -1,3 +1,23 @@
+/************************************/
+/*  Elements                        */
+/************************************/
+
+section { padding: 1em; }
+
+/************************************/
+/*  Color themes                    */
+/************************************/
+
+.bg-blue  { color: #FFFFFF; background: #2196F3; }
+.bg-white { color: #000000; background: #FFFFFF; }
+.bg-dark  { color: #FFFFFF; background: #212121; }
+.bg-black { color: #FFFFFF; background: #000000; }
+.bg-light { color: #000000; background: #EEEEEE; }
+
+/************************************/
+/*  Parallax                        */
+/************************************/
+
 .parallax {
     background: #2196F3;
     background-size: cover;
@@ -14,12 +34,16 @@
 
 .parallax-content > h1, .parallax-content > h2, .parallax-content > h3, .parallax-content > h4, .parallax-content > h5, .parallax-content > h6, .parallax-content > span {
     color: #FFFFFF;
+    font-family: Montserrat;
     text-align: center;
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6   { font-family: Montserrat; }
 .parallax-content > span { font-family: Pacifico; font-size: 24pt; }
+
+/************************************/
+/*  Navbar                          */
+/************************************/
 
 .navbar { background: transparent; }
 
