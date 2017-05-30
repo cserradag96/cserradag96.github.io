@@ -31,7 +31,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
     $translateProvider.translations("es", {
       submit      : "Enviar",
 
-      lang        : "<i class='fa fa-globe' aria-hidden='true'></i> english</a>",
+      lang        : "<i class='fa fa-globe' aria-hidden='true'></i> english",
       main_text0  : "¡Bienvenido!",
       main_text1  : "Me llamo <strong>Carlos Serrada</strong>, y éste es mi portafolio",
 
@@ -54,7 +54,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
     $translateProvider.translations("en", {
       submit      : "Submit",
 
-      lang        : "<i class='fa fa-globe' aria-hidden='true'></i> español</a>",
+      lang        : "<i class='fa fa-globe' aria-hidden='true'></i> español",
       main_text0  : "Welcome!",
       main_text1  : "My name is <strong>Carlos Serrada</strong>, and this is my portfolio",
 

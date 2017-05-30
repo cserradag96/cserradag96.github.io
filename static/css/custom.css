@@ -81,6 +81,12 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 .navbar-brand-scroll:hover, .navbar-brand-scroll:focus, .nav-scroll > li > a:hover, .nav-scroll > li > a:focus { color: #000000; box-shadow: none; background: #EEEEEE; }
 
 /************************************/
+/*  Buttons                         */
+/************************************/
+
+.btn-submit { color: #FFFFFF; background: #2196F3; border: 1px solid #BDBDBD; border-radius: 2px; }
+
+/************************************/
 /*  Social media buttons            */
 /************************************/
 
