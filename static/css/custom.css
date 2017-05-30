@@ -3,6 +3,13 @@
 /*#######################################################################################################################################################################################################################*/
 
 /************************************/
+/*  Scroll bar                      */
+/************************************/
+
+::-webkit-scrollbar { width: 6px; background-color: #2196F3; }
+::-webkit-scrollbar-thumb { background-color: #FFFFFF; border: 1px solid #BDBDBD; }
+
+/************************************/
 /*  Elements                        */
 /************************************/
 
@@ -79,6 +86,21 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 .navbar-brand-scroll:hover, .navbar-brand-scroll:focus, .nav-scroll > li > a:hover, .nav-scroll > li > a:focus { color: #000000; box-shadow: none; background: #EEEEEE; }
 
 /************************************/
+/*  Images                          */
+/************************************/
+
+.img-small  { height: 24px; width: 24px; }
+.img-medium { height: 48px; width: 48px; }
+.img-large  { height: 72px; width: 72px; }
+
+/************************************/
+/*      Containers                  */
+/************************************/
+
+.img-container { padding: 0.5em; display: inline-block; }
+.img-container > img, .img-container > h5 { text-align: center;  margin: 0 auto; display: block; }
+
+/************************************/
 /*  Buttons                         */
 /************************************/
 
@@ -97,13 +119,6 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 
 .input-group-addon > .fa-asterisk { color: #D50000; }
 form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
-
-/************************************/
-/*  Scroll bar                      */
-/************************************/
-
-::-webkit-scrollbar { width: 6px; background-color: #2196F3; }
-::-webkit-scrollbar-thumb { background-color: #FFFFFF; border: 1px solid #BDBDBD; }
 
 /*#######################################################################################################################################################################################################################*/
 /*  Small screens                                                                                                                                                                                                        */
