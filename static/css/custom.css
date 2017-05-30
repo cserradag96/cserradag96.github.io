@@ -1,3 +1,7 @@
+/*#######################################################################################################################################################################################################################*/
+/*  Default styles                                                                                                                                                                                                       */
+/*#######################################################################################################################################################################################################################*/
+
 /************************************/
 /*  Elements                        */
 /************************************/
@@ -76,12 +80,6 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 .navbar-brand-scroll, .nav-scroll > li > a { color: #000000; }
 .navbar-brand-scroll:hover, .navbar-brand-scroll:focus, .nav-scroll > li > a:hover, .nav-scroll > li > a:focus { color: #000000; box-shadow: none; background: #EEEEEE; }
 
-@media (max-width: 768px) {
-    .navbar { background: #FFFFFF; }
-    .navbar-brand, .nav > li > a { color: #000000; }
-    .navbar-brand:hover, .navbar-brand:focus, .nav > li > a:hover, .nav > li > a:focus { color: #000000; box-shadow: none; background: #EEEEEE; }
-}
-
 /************************************/
 /*  Social media buttons            */
 /************************************/
@@ -95,4 +93,25 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 
 .input-group-addon > .fa-asterisk { color: #D50000; }
 form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
+
+/*#######################################################################################################################################################################################################################*/
+/*  Small screens                                                                                                                                                                                                        */
+/*#######################################################################################################################################################################################################################*/
+
+@media (max-width: 768px) {
+
+    /************************************/
+    /*  Elements                        */
+    /************************************/
+
+    section { padding-left: 0em; padding-right: 0em; }
+
+    /************************************/
+    /*  Navbar                          */
+    /************************************/
+
+    .navbar { background: #FFFFFF; }
+    .navbar-brand, .nav > li > a { color: #000000; }
+    .navbar-brand:hover, .navbar-brand:focus, .nav > li > a:hover, .nav > li > a:focus { color: #000000; box-shadow: none; background: #EEEEEE; }
+}
 
