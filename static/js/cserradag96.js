@@ -69,7 +69,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
       contact_me_text2 : "Email address",
       contact_me_text3 : "Write a message...",
       contact_me_text4 : "Follow me",
-      contact_me_text5 : "Help me improve the site",
+      contact_me_text5 : "Help me to improve the site",
       contact_me_text6 : "Please let me know your suggestions, your comments and the errors you find by clicking <a href='https://github.com/cserradag96/cserradag96.github.io/issues'>here</a>. Also, if you liked my work you can help me to continue investigating making a donation:"
     });
 
