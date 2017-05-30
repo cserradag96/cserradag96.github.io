@@ -94,6 +94,13 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 .input-group-addon > .fa-asterisk { color: #D50000; }
 form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
 
+/************************************/
+/*  Scroll bar                      */
+/************************************/
+
+::-webkit-scrollbar { width: 6px; background-color: #2196F3; }
+::-webkit-scrollbar-thumb { background-color: #FFFFFF; border: 1px solid #BDBDBD; }
+
 /*#######################################################################################################################################################################################################################*/
 /*  Small screens                                                                                                                                                                                                        */
 /*#######################################################################################################################################################################################################################*/
@@ -120,4 +127,3 @@ form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
     .navbar-brand, .nav > li > a { color: #000000; }
     .navbar-brand:hover, .navbar-brand:focus, .nav > li > a:hover, .nav > li > a:focus { color: #000000; box-shadow: none; background: #EEEEEE; }
 }
-

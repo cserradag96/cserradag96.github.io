@@ -1,25 +1,27 @@
-<!-- Header -->
-<section class="header parallax">
-  <nav class="navbar navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
-        </button>
-        <a class="navbar-brand" href="#">cserradag96</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a translate="about_me" href="#"></a></li>
-          <li><a translate="skills" href="#"></a></li>
-          <li><a translate="experience" href="#"></a></li>
-          <li><a translate="projects" href="#"></a></li>
-          <li><a translate="contact_me" href="#"></a></li>
-          <li><a translate="lang" href="#" ng-click="changeLang()"><i class="fa fa-globe" aria-hidden="true"></i> English</a></li>
-        </ul>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </button>
+      <a class="navbar-brand" href="#cover">cserradag96</a>
     </div>
-  </nav>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#!/#about_me" translate="about_me"></a></li>
+        <li><a href="#!/#skills" translate="skills"></a></li>
+        <li><a href="#!/#experience" translate="experience"></a></li>
+        <li><a href="#!/#projects" translate="projects"></a></li>
+        <li><a href="#!/#contact_me" translate="contact_me"></a></li>
+        <li><a translate="lang" href="#" ng-click="changeLang()"><i class="fa fa-globe" aria-hidden="true"></i> English</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Cover section -->
+<section id="cover" class="header parallax">
   <div class="rox parallax-content">
     <span translate="main_text0"></span>
     <h1  translate="main_text1"></h1>
@@ -27,7 +29,7 @@
 </section>
 
 <!-- About me section -->
-<section class="bg-light">
+<section id="about_me" class="bg-light">
   <h2 translate="about_me"></h2>
   <div class="container-fluid section-content">
     <div class="col-md-4 col-xs-12">
@@ -49,22 +51,22 @@
 </section>
 
 <!-- Skills section -->
-<section class="bg-white">
+<section id="skills" class="bg-white">
 <h2 translate="skills"></h2>
 </section>
 
 <!-- Experience section -->
-<section class="bg-light">
+<section id="experience" class="bg-light">
 <h2 translate="experience"></h2>
 </section>
 
 <!-- Projects section -->
-<section class="bg-white">
+<section id="projects" class="bg-white">
 <h2 translate="projects"></h2>
 </section>
 
-<!-- Footer -->
-<section class="footer bg-dark">
+<!-- Contact me section -->
+<section id="contact_me" class="footer bg-dark">
   <h2 translate="contact_me"></h2>
   <div class="container-fluid">
     <div class="col-md-4 col-xs-12">
