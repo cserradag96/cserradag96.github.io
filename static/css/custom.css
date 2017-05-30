@@ -107,6 +107,12 @@ form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
     section { padding-left: 0em; padding-right: 0em; }
 
     /************************************/
+    /*  Content                         */
+    /************************************/
+
+    .section-content { padding: 0em; }
+
+    /************************************/
     /*  Navbar                          */
     /************************************/
 
