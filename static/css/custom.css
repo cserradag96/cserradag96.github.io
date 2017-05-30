@@ -42,12 +42,10 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
     display: table;
 }
 
-.parallax-content {
-    vertical-align: middle;
-    display: table-cell;
-}
+.parallax-content { vertical-align: middle; display: table-cell; }
+.parallax-footer { vertical-align: bottom; display: table-footer-group; }
 
-.parallax-content > h1, .parallax-content > h2, .parallax-content > h3, .parallax-content > h4, .parallax-content > h5, .parallax-content > h6, .parallax-content > span {
+.parallax-content > h1, .parallax-content > h2, .parallax-content > h3, .parallax-content > h4, .parallax-content > h5, .parallax-content > h6, .parallax-content > span, .parallax-footer > a {
     color: #FFFFFF;
     text-align: center;
     display: block;
