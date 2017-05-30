@@ -47,8 +47,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
       contact_me_text3 : "Escribir un mensaje...",
       contact_me_text4 : "Sigueme",
       contact_me_text5 : "Ayúdame a mejorar el sitio",
-      contact_me_text6 : "Por favor hazme saber tus sugerencias, tus comentarios y los errores que encuentres haciendo click <a href='https://github.com/cserradag96/cserradag96.github.io/issues'>aquí",
-      contact_me_text7 : "Sí te ha gustado mi trabajo puedes ayudarme a seguir investigando haciendo una donación"
+      contact_me_text6 : "Por favor hazme saber tus sugerencias, tus comentarios y los errores que encuentres haciendo click <a href='https://github.com/cserradag96/cserradag96.github.io/issues'>aquí</a>. Además, si te ha gustado mi trabajo puedes ayudarme a seguir investigando haciendo una donación:"
     });
 
     // English language
@@ -71,8 +70,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
       contact_me_text3 : "Write a message...",
       contact_me_text4 : "Follow me",
       contact_me_text5 : "Help me improve the site",
-      contact_me_text6 : "Please let me know your suggestions, your comments and the errors you find by clicking <a href='https://github.com/cserradag96/cserradag96.github.io/issues'>here",
-      contact_me_text7 : "If you liked my work you can help me to continue investigating making a donation"
+      contact_me_text6 : "Please let me know your suggestions, your comments and the errors you find by clicking <a href='https://github.com/cserradag96/cserradag96.github.io/issues'>here</a>. Also, if you liked my work you can help me to continue investigating making a donation:"
     });
 
     // Default language

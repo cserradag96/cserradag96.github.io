@@ -3,15 +3,17 @@
 /************************************/
 
 body    { display: flex; min-height: 100vh; flex-direction: column; }
-section { padding-top: 0.5em; padding-bottom: 0.5em; margin: 0px;}
+section { padding: 1.5em; margin: 0px;}
 section > h2 { text-transform: uppercase; text-align: center; }
 h1, h2, h3, h4, h5, h6 { font-family: Montserrat; }
+p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 
 /************************************/
 /*  Content                         */
 /************************************/
 
 .main-content { flex: 1; }
+.section-content { padding: 1em; }
 
 /************************************/
 /*  Color themes                    */
