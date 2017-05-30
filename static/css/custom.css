@@ -23,8 +23,9 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 /*  Content                         */
 /************************************/
 
-.main-content { flex: 1; }
+.main-content    { flex: 1; }
 .section-content { padding: 1em; }
+.center-content  { text-align: center; }
 
 /************************************/
 /*  Color themes                    */
