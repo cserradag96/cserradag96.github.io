@@ -94,6 +94,61 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 .img-medium { height: 48px; width: 48px; }
 .img-large  { height: 72px; width: 72px; }
 
+
+.flip-img { width: 300px; height: 200px; display: inline-block; margin: 0.5em;}
+.flip-img figure { margin: 0; padding: 0; position: relative; cursor: pointer; }
+.flip-img figure img { display: block; position: relative; z-index: 10; width: 300px; height: 200px; }
+.flip-img figure h2 { color: #FFFFFF; font-size: 20px; text-align: left; }
+.flip-img figure p { display: block; font-size: 12px; line-height: 18px; margin: 0; color: #FFFFFF; text-align: left; }
+
+.flip-img figure img {
+    backface-visibility: hidden;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    transition:all .5s
+}
+
+.flip-img figure:hover img {
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.flip-img figure figcaption {
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding: 29px 44px;
+    background: #2196F3;
+    text-align:center;
+    backface-visibility: hidden;
+    z-index:5;
+    display:block;
+    position:absolute;
+    -webkit-box-sizing:border-box;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transition: all .5s;
+    -o-box-sizing:border-box;
+    -o-transform: rotateY(-180deg);
+    -o-transition: all .5s;
+    -moz-box-sizing:border-box;
+    -moz-transform: rotateY(-180deg);
+    -moz-transition: all .5s;
+    box-sizing:border-box;
+    transform: rotateY(-180deg);
+    transition:all .5s
+}
+
+.flip-img figure:hover figcaption {
+    -webkit-transform: rotateY(0);
+    -o-transform: rotateY(180deg);
+    -moz-transform: rotateY(0);
+    transform: rotateY(0)
+}
+
 /************************************/
 /*      Containers                  */
 /************************************/
@@ -151,59 +206,4 @@ form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
     .navbar-brand:hover, .navbar-brand:focus, .nav > li > a:hover, .nav > li > a:focus { color: #000000; box-shadow: none; background: #EEEEEE; }
 
     .img-container { display: inline-block; }
-}
-
-
-.flip-img { width: 300px; height: 200px; display: inline-block; }
-.flip-img figure { margin: 0; padding: 0; position: relative; cursor: pointer; }
-.flip-img figure img { display: block; position: relative; z-index: 10; width: 300px; height: 200px; }
-.flip-img figure h2 { color: #FFFFFF; font-size: 20px; text-align: left; }
-.flip-img figure p { display: block; font-size: 12px; line-height: 18px; margin: 0; color: #FFFFFF; text-align: left; }
-
-.flip-img figure img {
-    backface-visibility: hidden;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    -moz-transition: all .5s;
-    transition:all .5s
-}
-
-.flip-img figure:hover img {
-    -webkit-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    transform: rotateY(180deg)
-}
-
-.flip-img figure figcaption {
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    padding: 29px 44px;
-    background: #2196F3;
-    text-align:center;
-    backface-visibility: hidden;
-    z-index:5;
-    display:block;
-    position:absolute;
-    -webkit-box-sizing:border-box;
-    -webkit-transform: rotateY(-180deg);
-    -webkit-transition: all .5s;
-    -o-box-sizing:border-box;
-    -o-transform: rotateY(-180deg);
-    -o-transition: all .5s;
-    -moz-box-sizing:border-box;
-    -moz-transform: rotateY(-180deg);
-    -moz-transition: all .5s;
-    box-sizing:border-box;
-    transform: rotateY(-180deg);
-    transition:all .5s
-}
-
-.flip-img figure:hover figcaption {
-    -webkit-transform: rotateY(0);
-    -o-transform: rotateY(180deg);
-    -moz-transform: rotateY(0);
-    transform: rotateY(0)
 }
