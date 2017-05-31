@@ -7,7 +7,7 @@
 /************************************/
 
 ::-webkit-scrollbar { width: 6px; background-color: #2196F3; }
-::-webkit-scrollbar-thumb { background-color: #FFFFFF; border: 1px solid #BDBDBD; }
+::-webkit-scrollbar-thumb { background-color: #FFFFFF; border: none; }
 
 /************************************/
 /*  Elements                        */
@@ -178,6 +178,12 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 
 .input-group-addon > .fa-asterisk { color: #D50000; }
 form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
+
+
+/************************************/
+/*  Footers                         */
+/************************************/
+.section-footer { padding-top: 2em; font-family: Montserrat; text-align: center;}
 
 /*#######################################################################################################################################################################################################################*/
 /*  Small screens                                                                                                                                                                                                        */
