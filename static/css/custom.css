@@ -157,8 +157,8 @@ form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
 
 .demo-3 {
     position:relative;
-    width:450px;
-    height:275px;
+    width:300px;
+    height:200px;
     overflow:hidden;
     float:left;
     margin-right:20px
@@ -175,8 +175,8 @@ form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
     position:relative;
     z-index:10;
     margin:-15px 0;
-    width:450px;
-    height: 275px;
+    width:300px;
+    height: 200px;
 }
 .demo-3 figure figcaption {
     display:block;
@@ -187,14 +187,14 @@ form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
     box-sizing:border-box
 }
 .demo-3 figure h2 {
-    font-family:'Lato';
-    color:#fff;
+    font-family:'Montserrat';
+    color:#FFFFFF;
     font-size:20px;
     text-align:left
 }
 .demo-3 figure p {
     display:block;
-    font-family:'Lato';
+    font-family:'Montserrat';
     font-size:12px;
     line-height:18px;
     margin:0;
@@ -207,7 +207,7 @@ form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
     width:100%;
     height:100%;
     padding:29px 44px;
-    background-color:rgba(26,76,110,0.5);
+    background-color: #2196F3;
     text-align:center;
     backface-visibility:hidden;
     -webkit-transform:rotateY(-180deg);
