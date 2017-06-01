@@ -153,10 +153,10 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 /*      Containers                  */
 /************************************/
 
-.table-container { display: table; }
+.table-container { display: inline-block; }
 .row-container   { display: table-row; }
 
-.img-container { padding: 0.5em; display: table-cell; }
+.img-container { text-align: center; margin: 0.75em; display: inline-block; }
 .img-container > img, .img-container > h5 { text-align: center;  margin: 0 auto; display: block; }
 
 /************************************/
