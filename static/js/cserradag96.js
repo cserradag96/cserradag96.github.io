@@ -6,11 +6,12 @@ var cserradag96 = angular.module("cserradag96", ["ui.router", 'pascalprecht.tran
 /*#########################################################################################################################################################################################################################
 # APP CONFIGURATION
 #########################################################################################################################################################################################################################*/
-cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvider, $locationProvider) {
+cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvider) {
 
     /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     - ROUTES MANAGEMENT
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
     $stateProvider
         // Main screen
         .state("main", {
@@ -19,18 +20,8 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
             controller  : "MainController"
         })
 
-        // Main screen
-        .state("hola", {
-            url         : "/hola",
-            templateUrl : "views/main/main.html",
-            controller  : "MainController"
-        })
-
     // Wrong url
     $urlRouterProvider.otherwise("/");
-
-    // Configure base url
-    $locationProvider.html5Mode(true);
 
     /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     - TRANSLATE MANAGEMENT
