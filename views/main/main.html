@@ -5,15 +5,15 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
       </button>
-      <a class="navbar-brand" href="#cover">cserradag96</a>
+      <a class="navbar-brand btn-scroll" href="#cover">cserradag96</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about_me" translate="about_me"></a></li>
-        <li><a href="#skills" translate="skills"></a></li>
-        <li><a href="#experience" translate="experience"></a></li>
-        <li><a href="#projects" translate="projects"></a></li>
-        <li><a href="#contact_me" translate="contact_me"></a></li>
+        <li><a class="btn-scroll" href="#about_me" translate="about_me"></a></li>
+        <li><a class="btn-scroll" href="#skills" translate="skills"></a></li>
+        <li><a class="btn-scroll" href="#experience" translate="experience"></a></li>
+        <li><a class="btn-scroll" href="#projects" translate="projects"></a></li>
+        <li><a class="btn-scroll" href="#contact_me" translate="contact_me"></a></li>
         <li><a href="" translate="lang" ng-click="changeLang()"></a></li>
       </ul>
     </div>
@@ -289,30 +289,12 @@
   <div class="section-footer text-center">Copyright &#169; 2017 Carlos Serrada</div>
 </section>
 
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-        console.log($('nav').height());
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top - $('nav').height()
-        }, 800, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          //window.location.hash = hash;
-        });
-      } // End if
+<script>
+  $(function(){
+    $(".btn-scroll").on('click', function(event) {
+      event.preventDefault();
+      var hash = this.hash;
+      $('body').animate({ scrollTop: $(hash).offset().top - $('nav').height()}, 800, function(){});
     });
   });
-  </script>
+</script>
