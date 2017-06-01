@@ -20,13 +20,6 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
             controller  : "MainController"
         })
 
-        // Main screen
-        .state("hola", {
-            url         : "/hola",
-            templateUrl : "views/main/main.html",
-            controller  : "MainController"
-        })
-
     // Wrong url
     $urlRouterProvider.otherwise("");
 
