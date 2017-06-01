@@ -8,13 +8,21 @@
       <a class="navbar-brand btn-scroll" href="#cover">cserradag96</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right hidden-xs">
         <li><a class="btn-scroll" href="#about_me" translate="about_me"></a></li>
         <li><a class="btn-scroll" href="#skills" translate="skills"></a></li>
         <li><a class="btn-scroll" href="#experience" translate="experience"></a></li>
         <li><a class="btn-scroll" href="#projects" translate="projects"></a></li>
         <li><a class="btn-scroll" href="#contact_me" translate="contact_me"></a></li>
         <li><a href="" translate="lang" ng-click="changeLang()"></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right visible-xs">
+        <li><a data-toggle="collapse" data-target=".navbar-collapse" class="btn-scroll" href="#about_me" translate="about_me"></a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse" class="btn-scroll" href="#skills" translate="skills"></a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse" class="btn-scroll" href="#experience" translate="experience"></a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse" class="btn-scroll" href="#projects" translate="projects"></a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse" class="btn-scroll" href="#contact_me" translate="contact_me"></a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="" translate="lang" ng-click="changeLang()"></a></li>
       </ul>
     </div>
   </div>
@@ -185,12 +193,10 @@
 
 <script>
   $(function(){
-    $('.navbar-toggle').click();
-
     $(".btn-scroll").on('click', function(event) {
       event.preventDefault();
       var hash = this.hash;
-      $('body').animate({ scrollTop: $(hash).offset().top - $('nav').height()}, 800, function(){});
+      $('body').animate({ scrollTop: $(hash).offset().top - $('.navbar-header').height()}, 800, function(){});
     });
   });
 </script>
