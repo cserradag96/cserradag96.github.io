@@ -67,11 +67,11 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
 
       // Experience section
       experience       : "experiencia",
-      experience_text0 : "Comencé a programar a la edad de 16 años, poco antes de iniciar mis estudios universitarios y el lenguaje de programación con el que me inicialicé fue JavaScript, no lo escogí por ninguna\
+      experience_text0 : "Comencé a programar a la edad de 16 años, poco antes de iniciar mis estudios universitarios y el lenguaje de programación con el que me inicié fue JavaScript, no lo escogí por ninguna\
                          razón en particular, solo había escuchado mucho de él y me pareció divertido aprenderlo. Al mismo tiempo sin darme cuenta empecé a aprender algo de HTML y CSS para acompañar los scripts que\
                          desarrollaba y llegue a hacer cosas muy geniales como por ejemplo una página que generaba una historia aleatoria dependiendo de ciertas preguntas que se le hacian al usuario.",
-      experience_text1 : "Ya han pasado 4 años desde entonces y he acumulado muchísima experiencia tanto en mis investigaciones personales como en los númerosos proyectos que me ha tocado desarrollar para mis\
-                         asignaturas en la  universidad y ahora tambien el campo laboral.",
+      experience_text1 : "Han pasado 4 años desde entonces y he acumulado muchísima experiencia tanto en mis investigaciones personales como en los númerosos proyectos que me ha tocado desarrollar para mis\
+                         asignaturas en la  universidad y ahora tambien en el campo laboral.",
       experience_text2 : "El primer \"trabajo\" que tuve fue cuando fui elegido por mis compañeros de la carrera como el Coordinador de Información y Tecnología del Centro de Estudiantes de Ingeniería de la Computación\
                          de la Universidad Simón Bolívar para el periodo 2016-2017. Sigo ocupando este cargo y para poder llevar el peso que conlleva he tenido que aprender muchísimo.",
       experience_text3 : "Me ha tocado diseñar y organizar eventos de programación competitiva, aprender técnicas de automatización y manejo de redes sociales para difusión masiva de información, aprender a utilizar \
@@ -80,7 +80,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
       experience_text4 : "Al llegar al final del tercer año de la carrera, participé en dos proyectos de desarrollo de software necesarios para poder aprobar ciertas asignaturas. Ambos proyectos fueron con clientes\
                          reales pero usando metodologías y tecnologías diferentes. En uno de ellos se trabajó con django y en el otro con web2py, en ambos cumplí el rol de desarrollador frontend, pero en el segundo \
                          además cumplí como rol de líder del proyecto. Adquirí mucha experiencia con estos dos proyectos y fue la primera vez que interactué con clientes.",
-      experience_text5 : "Recientemente me uní al campo laboral oficialmente y me encuentro trabajando en dos proyectos de desarrollo web, ambos con AngularJS y me va de maravilla.",
+      experience_text5 : "Recientemente me uní al campo laboral oficialmente y me encuentro trabajando en dos proyectos de desarrollo web, ambos con AngularJS y con excelentes resultados.",
 
       // Projects section
       projects    : "proyectos",
@@ -137,11 +137,11 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
 
       // Experience section
       experience       : "experience",
-      experience_text0 : "Comencé a programar a la edad de 16 años, poco antes de iniciar mis estudios universitarios y el lenguaje de programación con el que me inicialicé fue JavaScript, no lo escogí por ninguna\
+      experience_text0 : "Comencé a programar a la edad de 16 años, poco antes de iniciar mis estudios universitarios y el lenguaje de programación con el que me inicié fue JavaScript, no lo escogí por ninguna\
                          razón en particular, solo había escuchado mucho de él y me pareció divertido aprenderlo. Al mismo tiempo sin darme cuenta empecé a aprender algo de HTML y CSS para acompañar los scripts que\
                          desarrollaba y llegue a hacer cosas muy geniales como por ejemplo una página que generaba una historia aleatoria dependiendo de ciertas preguntas que se le hacian al usuario.",
-      experience_text1 : "Ya han pasado 4 años desde entonces y he acumulado muchísima experiencia tanto en mis investigaciones personales como en los númerosos proyectos que me ha tocado desarrollar para mis\
-                         asignaturas en la  universidad y ahora tambien el campo laboral.",
+      experience_text1 : "Han pasado 4 años desde entonces y he acumulado muchísima experiencia tanto en mis investigaciones personales como en los númerosos proyectos que me ha tocado desarrollar para mis\
+                         asignaturas en la  universidad y ahora tambien en el campo laboral.",
       experience_text2 : "El primer \"trabajo\" que tuve fue cuando fui elegido por mis compañeros de la carrera como el Coordinador de Información y Tecnología del Centro de Estudiantes de Ingeniería de la Computación\
                          de la Universidad Simón Bolívar para el periodo 2016-2017. Sigo ocupando este cargo y para poder llevar el peso que conlleva he tenido que aprender muchísimo.",
       experience_text3 : "Me ha tocado diseñar y organizar eventos de programación competitiva, aprender técnicas de automatización y manejo de redes sociales para difusión masiva de información, aprender a utilizar \
@@ -150,7 +150,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
       experience_text4 : "Al llegar al final del tercer año de la carrera, participé en dos proyectos de desarrollo de software necesarios para poder aprobar ciertas asignaturas. Ambos proyectos fueron con clientes\
                          reales pero usando metodologías y tecnologías diferentes. En uno de ellos se trabajó con django y en el otro con web2py, en ambos cumplí el rol de desarrollador frontend, pero en el segundo \
                          además cumplí como rol de líder del proyecto. Adquirí mucha experiencia con estos dos proyectos y fue la primera vez que interactué con clientes.",
-      experience_text5 : "Recientemente me uní al campo laboral oficialmente y me encuentro trabajando en dos proyectos de desarrollo web, ambos con AngularJS y me va de maravilla.",
+      experience_text5 : "Recientemente me uní al campo laboral oficialmente y me encuentro trabajando en dos proyectos de desarrollo web, ambos con AngularJS y con excelentes resultados.",
 
       // Projects section
       projects    : "projects",
