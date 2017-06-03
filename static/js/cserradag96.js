@@ -91,7 +91,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
       contact_me_text1 : "Nombre",
       contact_me_text2 : "Correo electrónico",
       contact_me_text3 : "Escribir un mensaje...",
-      contact_me_text4 : "Sigueme",
+      contact_me_text4 : "Sígueme",
       contact_me_text5 : "Ayúdame a mejorar el sitio",
       contact_me_text6 : "Por favor hazme saber tus sugerencias, tus comentarios y los errores que encuentres haciendo click <a href='https://github.com/cserradag96/cserradag96.github.io/issues'>aquí</a>. Además, \
                           si te ha gustado mi trabajo puedes ayudarme a seguir investigando haciendo una donación:",
