@@ -163,7 +163,8 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 /*  Buttons                         */
 /************************************/
 
-.btn-submit { color: #FFFFFF; background: #2196F3; border: 1px solid #BDBDBD; border-radius: 2px; }
+.btn-submit { color: #FFFFFF; font-family: Montserrat; font-weight: 600; background: #2196F3; border: none; }
+.btn-submit:hover { color: #000000; background: #FFFFFF; }
 
 /************************************/
 /*  Social media buttons            */
