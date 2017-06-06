@@ -87,7 +87,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $translateProvid
 
       // Contact me section
       contact_me       : "contáctame",
-      contact_me_text0 : "Escribeme",
+      contact_me_text0 : "Escríbeme",
       contact_me_text1 : "Nombre",
       contact_me_text2 : "Correo electrónico",
       contact_me_text3 : "Escribir un mensaje...",
