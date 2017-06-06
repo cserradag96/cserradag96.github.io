@@ -47,9 +47,9 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       about_me_text1 : "Estoy muy agradecido por estudiar en una universidad con tan alto grado de excelencia educativa, sobretodo considerando el país en donde vivo, sin embargo, mis ansias de conocimiento no quedan\
                        satisfechas solo con lo que aprendo allí y es por eso que he crecido enormemente como desarrollador siendo autodidacta y participando en numerosos proyectos y eventos.",
       about_me_text2 : "Mi búsqueda de conocimiento me ha llevado al mundo laboral mediante el desarrollo web, en el cual he estado especializándome desde hace un tiempo, en especial en la rama del frontend, sin \
-                       embargo no me limito solo a esta área, tengo conocimientos en backend y una de mis metas actuales en convertirme en desarrollador web full stack.",
+                       embargo no me limito solo a ésta área, tengo conocimientos en backend y una de mis metas actuales en convertirme en desarrollador web full stack.",
       about_me_text3 : "Pero lo anterior no significa que solo me limite al desarrollo web, pues me apasionan muchos otros temas y he desarrollado todo tipo de software en el camino. Me considero talentoso, aprendo \
-                       rapido, y siempre intento dar lo mejor de mi en mi trabajo y resulta muy fácil hacerlo porque amo lo que hago.",
+                       rápido, y siempre intento dar lo mejor de mi en mi trabajo y resulta muy fácil hacerlo porque amo lo que hago.",
 
       // Skills section
       skills       : "habilidades",
@@ -120,9 +120,9 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       about_me_text1 : "Estoy muy agradecido por estudiar en una universidad con tan alto grado de excelencia educativa, sobretodo considerando el país en donde vivo, sin embargo, mis ansias de conocimiento no quedan\
                        satisfechas solo con lo que aprendo allí y es por eso que he crecido enormemente como desarrollador siendo autodidacta y participando en numerosos proyectos y eventos.",
       about_me_text2 : "Mi búsqueda de conocimiento me ha llevado al mundo laboral mediante el desarrollo web, en el cual he estado especializándome desde hace un tiempo, en especial en la rama del frontend, sin \
-                       embargo no me limito solo a esta área, tengo conocimientos en backend y una de mis metas actuales en convertirme en desarrollador web full stack.",
+                       embargo no me limito solo a ésta área, tengo conocimientos en backend y una de mis metas actuales en convertirme en desarrollador web full stack.",
       about_me_text3 : "Pero lo anterior no significa que solo me limite al desarrollo web, pues me apasionan muchos otros temas y he desarrollado todo tipo de software en el camino. Me considero talentoso, aprendo \
-                       rapido, y siempre intento dar lo mejor de mi en mi trabajo y resulta muy fácil hacerlo porque amo lo que hago.",
+                       rápido, y siempre intento dar lo mejor de mi en mi trabajo y resulta muy fácil hacerlo porque amo lo que hago.",
 
       // Skills section
       skills       : "skills",
