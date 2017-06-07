@@ -193,7 +193,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
     - RECAPTCHA
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     vcRecaptchaServiceProvider.setDefaults({
-        key  : '6LeO4CMUAAAAAMu5-HGv_ebbNArd5gACtPrnRdSk',
+        key  : '6LdEbyQUAAAAAIvf-9Nc5G9u7itWnQkwLKqsz_em',
         size : 'normal'
     });
 
