@@ -93,7 +93,23 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       experience_text5 : "Recientemente me uní al campo laboral oficialmente y me encuentro trabajando en dos proyectos de desarrollo web, ambos con AngularJS y con excelentes resultados.",
 
       // Projects section
-      projects    : "proyectos",
+      projects       : "proyectos",
+      project_title0 : "GUIKIFIX",
+      project_title1 : "INEA Tugs",
+      project_title2 : "Apolo",
+      project_title3 : "SIGPAE",
+      project_title4 : "CEIC Suite",
+      project_title5 : "Retyna",
+      project_title6 : "PyCG Player",
+      project_title7 : "Unlimited Lines & Rectangles",
+      project_text0  : "",
+      project_text1  : "Sistema de gestión y control de actividades para el INEA.",
+      project_text2  : "Sistema de administración online para el cuerpo de bomberos voluntarios de la Universidad Simón Bolívar.",
+      project_text3  : "Sistema de gestión de programas analíticos de estudios.",
+      project_text4  : "Sistema de gestión de ventas y préstamos de libros para el CEIC.",
+      project_text5  : "Interpretador implementado en Ruby para el lenguaje Retina.",
+      project_text6  : "Reproductor de música sencillo implementado en Python.",
+      project_text7  : "Juego basado en Color Lines implementado en Python.",
 
       // Contact me section
       contact_me       : "contáctame",
@@ -172,7 +188,23 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       experience_text5 : "Recientemente me uní al campo laboral oficialmente y me encuentro trabajando en dos proyectos de desarrollo web, ambos con AngularJS y con excelentes resultados.",
 
       // Projects section
-      projects    : "projects",
+      projects       : "projects",
+      project_title0 : "GUIKIFIX",
+      project_title1 : "INEA Tugs",
+      project_title2 : "Apolo",
+      project_title3 : "SIGPAE",
+      project_title4 : "CEIC Suite",
+      project_title5 : "Retyna",
+      project_title6 : "PyCG Player",
+      project_title7 : "Unlimited Lines & Rectangles",
+      project_text0  : "",
+      project_text1  : "Sistema de gestión y control de actividades para el INEA.",
+      project_text2  : "Sistema de administración online para el cuerpo de bomberos voluntarios de la Universidad Simón Bolívar.",
+      project_text3  : "Sistema de gestión de programas analíticos de estudios.",
+      project_text4  : "Sistema de gestión de ventas y préstamos de libros para el CEIC.",
+      project_text5  : "Interpretador implementado en Ruby para el lenguaje Retina.",
+      project_text6  : "Reproductor de música sencillo implementado en Python.",
+      project_text7  : "Juego basado en Color Lines implementado en Python.",
 
       // Contact me section
       contact_me       : "contact me",
