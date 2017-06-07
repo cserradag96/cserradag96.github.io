@@ -44,7 +44,7 @@
 
 <!-- About me section -->
 <section id="about_me" class="bg-light">
-  <h2 translate="about_me"></h2>
+  <div class="section-title"><h2 translate="about_me"></h2></div>
   <div class="container-fluid section-content">
     <div class="col-md-4 col-xs-12">
     </div>
@@ -63,7 +63,7 @@
 
 <!-- Skills section -->
 <section id="skills" class="bg-white">
-  <h2 translate="skills"></h2>
+  <div class="section-title"><h2 translate="skills"></h2></div>
   <div class="container-fluid section-content">
     <div class="col-md-8 col-xs-12">
       <div class="col-md-6 col-xs-12">
@@ -108,7 +108,7 @@
 
 <!-- Experience section -->
 <section id="experience" class="bg-light">
-  <h2 translate="experience"></h2>
+  <div class="section-title"><h2 translate="experience"></h2></div>
   <div class="container-fluid section-content">
     <div class="container-fluid">
       <div class="col-md-4 col-xs-12">
@@ -129,7 +129,7 @@
 
 <!-- Projects section -->
 <section id="projects" class="bg-white">
-  <h2 translate="projects"></h2>
+  <div class="section-title"><h2 translate="projects"></h2></div>
   <div class="container-fluid section-content center-content">
     <div class="flip-img">
       <figure>
@@ -208,7 +208,7 @@
 
 <!-- Contact me section -->
 <section id="contact_me" class="footer bg-dark">
-  <h2 translate="contact_me"></h2>
+  <div class="section-title"><h2 translate="contact_me"></h2></div>
   <div class="container-fluid section-content">
     <div class="col-md-4 col-xs-12">
       <h3 translate="contact_me_text0" class="text-center"></h3>
@@ -256,4 +256,10 @@
       $('body').animate({ scrollTop: $(hash).offset().top - $('.navbar-header').height()}, 800, function(){});
     });
   });
+
+  window.sr = ScrollReveal();
+  sr.reveal('.flip-img', {duration: 800}, 150);
+  sr.reveal('.section-title', {duration: 1500});
+  sr.reveal('.section-content', {duration: 1500});
+  sr.reveal('.img-container', {duration: 200}, 50);
 </script>

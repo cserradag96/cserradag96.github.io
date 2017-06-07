@@ -27,6 +27,7 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 .section-content, .content { padding: 1em; }
 .center-content   { text-align: center; }
 .center-div > div { display: table;  margin: 0 auto; }
+.section-title    { text-transform: uppercase; text-align: center; }
 
 /************************************/
 /*  Color themes                    */

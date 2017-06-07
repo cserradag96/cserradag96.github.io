@@ -13,5 +13,4 @@ $(function(){
       $(".nav").removeClass('nav-scroll');
     };
   });
-
 });
