@@ -1,0 +1,17 @@
+<!-- Cover section -->
+<section id="cover" class="header parallax">
+  <div ng-show="!verificationSuccess" class="parallax-content">
+    <h3>Por favor completa lo siguiente para continuar</h3>
+    <form ng-submit="sendContactMail()">
+      <div class="center-content center-div">
+        <div vc-recaptcha on-success="recaptchaValidate()" on-expire="recaptchaExpire()"></div>
+        <button class="btn" type="submit" ng-disabled="!validRecaptcha">Enviar</button>
+      </div>
+    </form>
+  </div>
+  <div ng-show="verificationSuccess" class="parallax-content">
+    <h3>Se ha enviado el correo :D</h3>
+    <button class="btn" type="submit" ng-click="goToMain()">Volver</button>
+  </div>
+</section>
+

@@ -209,20 +209,20 @@
   <div class="container-fluid section-content">
     <div class="col-md-4 col-xs-12">
       <h3 translate="contact_me_text0" class="text-center"></h3>
-      <form method="POST" action="https://formspree.io/thecsportfolio@gmail.com">
+      <form name="contactForm" ng-submit="goToRecaptcha(sender)">
         <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-          <input required type="text" class="form-control" placeholder="{{'contact_me_form0' | translate}}" name="sender_name">
+          <input required type="text" class="form-control" placeholder="{{'contact_me_form0' | translate}}" ng-model="sender.name">
           <span class="input-group-addon"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
         </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-          <input required type="email" class="form-control" placeholder="{{'contact_me_form1' | translate}}" name="sender_email">
+          <input required type="email" class="form-control" placeholder="{{'contact_me_form1' | translate}}" ng-model="sender.email">
           <span class="input-group-addon"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
         </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-edit" aria-hidden="true"></i></span>
-          <textarea required rows="4" class="form-control" placeholder="{{'contact_me_form2' | translate}}" name="sender_message"></textarea>
+          <textarea required rows="4" class="form-control" placeholder="{{'contact_me_form2' | translate}}" ng-model="sender.message"></textarea>
           <span class="input-group-addon"><i class="fa fa-asterisk" aria-hidden="true"></i></span>
         </div>
         <button translate="submit" type="submit" class="btn btn-submit"></button>
@@ -239,7 +239,7 @@
       <h3 translate="contact_me_text5"></h3>
       <p translate="contact_me_text6"></p>
       <a type="button" class="social-btn" href="https://paypal.me/cserradag96" style="padding-right: 1em;"><i class="fa fa-cc-paypal fa-3x" aria-hidden="true"></i></a>
-      <a type="button" class="social-btn" href="/static/img/donate/bitcoin.png"><i class="fa fa-btc fa-3x" aria-hidden="true"></i></a>
+      <a type="button" class="social-btn" href ng-click="btcQR()"><i class="fa fa-btc fa-3x" aria-hidden="true"></i></a>
     </div>
   </div>
   <div class="section-footer text-center">Copyright &#169; 2017 Carlos Serrada</div>

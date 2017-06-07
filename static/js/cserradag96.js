@@ -1,12 +1,12 @@
 /*#########################################################################################################################################################################################################################
 # MODULE CREATION
 #########################################################################################################################################################################################################################*/
-var cserradag96 = angular.module("cserradag96", ["ui.router", 'pascalprecht.translate', 'ngSanitize']);
+var cserradag96 = angular.module("cserradag96", ["ui.router", 'pascalprecht.translate', 'ngSanitize', 'oitozero.ngSweetAlert', 'vcRecaptcha']);
 
 /*#########################################################################################################################################################################################################################
 # APP CONFIGURATION
 #########################################################################################################################################################################################################################*/
-cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
+cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider, vcRecaptchaServiceProvider) {
 
     /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     - ROUTES MANAGEMENT
@@ -18,6 +18,13 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
             url         : "/",
             templateUrl : "views/main/main.html",
             controller  : "MainController"
+        })
+
+        // Main screen
+        .state("recaptcha", {
+            url         : "/verification",
+            templateUrl : "views/main/recaptcha.html",
+            controller  : "RecaptchaController"
         })
 
     // Wrong url
@@ -181,6 +188,14 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
 
     // Mark as safe
     $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
+
+    /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    - RECAPTCHA
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    vcRecaptchaServiceProvider.setDefaults({
+        key  : '6LeO4CMUAAAAAMu5-HGv_ebbNArd5gACtPrnRdSk',
+        size : 'normal'
+    });
 
 });
 

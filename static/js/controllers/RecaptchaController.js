@@ -1,35 +1,39 @@
 /*#########################################################################################################################################################################################################################
-# MAIN APPLICATION CONTROLLER
+# RECAPTCHA CONTROLLER
 #########################################################################################################################################################################################################################*/
-cserradag96.controller('MainController', function($scope, $rootScope, $http, $state, $translate, SweetAlert) {
+cserradag96.controller('RecaptchaController', function($scope, $rootScope, $http, $state, $translate, SweetAlert) {
 
     //$state.defaultErrorHandler(function() { /* do nothing */});
 
     /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     - FUNCIONES
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    $scope.changeLang = function() {
-        if ($rootScope.lang =='es') { $rootScope.lang = 'en'; }
-        else { $rootScope.lang = 'es'; };
-        $translate.use($rootScope.lang);
+    $scope.sendContactMail = function() {
+        $scope.validRecaptcha = false;
+        $http.post("https://formspree.io/thecsportfolio@gmail.com", $rootScope.mailData).then(
+            function successCallback(response) {
+                $scope.verificationSuccess = true;
+            },
+            function errorCallback(response) {}
+        );
     };
 
-    $scope.btcQR = function() {
-        SweetAlert.swal({
-            title: "Enviar BTC",
-            text: "<img src='/static/img/donate/bitcoin.png'>",
-            html: true,
-            closeOnCancel: true
-        });
+    $scope.recaptchaValidate = function() {
+        $scope.validRecaptcha = true;
     };
 
-    $scope.goToRecaptcha = function(data) {
-        $rootScope.mailData = data;
-        $state.go('recaptcha');
+    $scope.recaptchaExpire = function() {
+        $scope.validRecaptcha = false;
+    };
+
+    $scope.goToMain = function() {
+        $state.go('main');
     };
 
     /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     - VIEW CONFIGURATION
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    $scope.validRecaptcha = false;
+    $scope.verificationSuccess = false;
 
 });

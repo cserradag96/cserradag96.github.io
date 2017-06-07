@@ -23,9 +23,10 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 /*  Content                         */
 /************************************/
 
-.main-content    { flex: 1; }
-.section-content { padding: 1em; }
-.center-content  { text-align: center; }
+.main-content     { flex: 1; }
+.section-content  { padding: 1em; }
+.center-content   { text-align: center; }
+.center-div > div { display: table;  margin: 0 auto; }
 
 /************************************/
 /*  Color themes                    */
@@ -214,3 +215,4 @@ form > * { padding-top: 0.2em; padding-bottom: 0.2em; }
 
     .img-container { display: inline-block; }
 }
+
