@@ -24,7 +24,7 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 /************************************/
 
 .main-content     { flex: 1; }
-.section-content  { padding: 1em; }
+.section-content, .content { padding: 1em; }
 .center-content   { text-align: center; }
 .center-div > div { display: table;  margin: 0 auto; }
 
@@ -94,7 +94,6 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 .img-small  { height: 24px; width: 24px; }
 .img-medium { height: 48px; width: 48px; }
 .img-large  { height: 72px; width: 72px; }
-
 
 .flip-img { width: 300px; height: 200px; display: inline-block; margin: 0.5em;}
 .flip-img figure { margin: 0; padding: 0; position: relative; cursor: pointer; }
@@ -166,6 +165,20 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 
 .btn-submit { color: #FFFFFF; font-family: Montserrat; font-weight: 600; background: #2196F3; border: none; }
 .btn-submit:hover { color: #000000; background: #FFFFFF; }
+.btn-parallax, .btn-parallax:focus {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    margin: .5em;
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.btn-parallax:hover { color: #000000; background: #FFFFFF; }
 
 /************************************/
 /*  Social media buttons            */

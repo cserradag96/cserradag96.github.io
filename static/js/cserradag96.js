@@ -107,7 +107,13 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
                           si te ha gustado mi trabajo puedes ayudarme a seguir investigando haciendo una donación:",
       contact_me_form0 : "Nombre",
       contact_me_form1 : "Dirección email",
-      contact_me_form2 : "Escriba un mensaje..."
+      contact_me_form2 : "Escriba un mensaje...",
+
+      // Recaptcha
+      recaptcha_text0 : "Por favor completa lo siguiente para continuar",
+      recaptcha_text1 : "Continuar",
+      recaptcha_text2 : "Se ha enviado el correo :D",
+      recaptcha_text3 : "Volver al portafolio"
     });
 
     // English language
@@ -180,7 +186,13 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
                           work you can help me to continue investigating making a donation:",
       contact_me_form0 : "Name",
       contact_me_form1 : "Email address",
-      contact_me_form2 : "Write a message..."
+      contact_me_form2 : "Write a message...",
+
+      // Recaptcha
+      recaptcha_text0 : "Please complete the following to continue",
+      recaptcha_text1 : "Continue",
+      recaptcha_text2 : "The email has been sent :D",
+      recaptcha_text3 : "Back to portfolio"
     });
 
     // Default language
@@ -203,7 +215,8 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
 # INITIAL GLOBAL SETTINGS
 #########################################################################################################################################################################################################################*/
 cserradag96.run(function ($rootScope) {
-    $rootScope.baseURL = "//cserradag96.github.io/";  /* Server domain */
-    $rootScope.apiURL  = "static/apis/";              /* Server domain */
-    $rootScope.lang    = 'es';                        /* Default lenguage */
+    $rootScope.baseURL = "https://cserradag96.github.io/";                   /* Server domain */
+    $rootScope.apiURL  = "static/apis/";                                     /* Server domain */
+    $rootScope.lang    = 'es';                                               /* Default lenguage */
+    $rootScope.grcAPI  = "https://www.google.com/recaptcha/api/siteverify "  /* Google recaptcha server side verify api */
 });

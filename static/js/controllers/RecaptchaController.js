@@ -9,30 +9,22 @@ cserradag96.controller('RecaptchaController', function($scope, $rootScope, $http
     - FUNCIONES
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     $scope.sendContactMail = function() {
-        $scope.validRecaptcha = false;
+        $scope.disbleBtn = true;
         $http.post("https://formspree.io/thecsportfolio@gmail.com", $rootScope.mailData).then(
-            function successCallback(response) {
-                $scope.verificationSuccess = true;
-            },
-            function errorCallback(response) {}
+            function successCallback(response) { $scope.verificationSuccess = true; },
+            function errorCallback(response) { $scope.disbleBtn = false; }
         );
     };
 
-    $scope.recaptchaValidate = function() {
-        $scope.validRecaptcha = true;
-    };
-
-    $scope.recaptchaExpire = function() {
-        $scope.validRecaptcha = false;
-    };
-
-    $scope.goToMain = function() {
-        $state.go('main');
-    };
+    $scope.setID = function (id) { $scope.id = id; };
+    $scope.recaptchaValidate = function() { $scope.validRecaptcha = true; };
+    $scope.recaptchaExpire = function() { $scope.validRecaptcha = false; vcRecaptchaService.reload($scope.id); };
+    $scope.goToMain = function() { $state.go('main'); };
 
     /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     - VIEW CONFIGURATION
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    $scope.disbleBtn = false;
     $scope.validRecaptcha = false;
     $scope.verificationSuccess = false;
 
