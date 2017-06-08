@@ -82,30 +82,30 @@
       </div>
     </div>
     <div class="col-md-4 center-content">
-      <div class="img-container"><img src="static/img/skills/python.png"></div>
-      <div class="img-container"><img src="static/img/skills/ruby.png"></div>
-      <div class="img-container"><img src="static/img/skills/java.png"></div>
-      <div class="img-container"><img src="static/img/skills/c.png"></div>
-      <div class="img-container"><img src="static/img/skills/c-plus-plus.png"></div>
-      <div class="img-container"><img src="static/img/skills/bash.png"></div>
-      <div class="img-container"><img src="static/img/skills/javascript.png"></div>
-      <div class="img-container"><img src="static/img/skills/html-5.png"></div>
-      <div class="img-container"><img src="static/img/skills/css-3.png"></div>
-      <div class="img-container"><img src="static/img/skills/angular.png"></div>
-      <div class="img-container"><img src="static/img/skills/bootstrap.png"></div>
-      <div class="img-container"><img src="static/img/skills/jquery.png"></div>
-      <div class="img-container"><img src="static/img/skills/django.png"></div>
-      <div class="img-container"><img src="static/img/skills/qt.png"></div>
-      <div class="img-container"><img src="static/img/skills/postgre-sql.png"></div>
-      <div class="img-container"><img src="static/img/skills/git.png"></div>
-      <div class="img-container"><img src="static/img/skills/github.png"></div>
-      <div class="img-container"><img src="static/img/skills/bitbucket.png"></div>
-      <div class="img-container"><img src="static/img/skills/gitlab.png"></div>
-      <div class="img-container"><img src="static/img/skills/linux.png"></div>
-      <div class="img-container"><img src="static/img/skills/windows.png"></div>
-      <div class="img-container"><img src="static/img/skills/gimp.png"></div>
-      <div class="img-container"><img src="static/img/skills/inkscape.png"></div>
-      <div class="img-container"><img src="static/img/skills/ms-office.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Python"><img src="static/img/skills/python.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Ruby"><img src="static/img/skills/ruby.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Java"><img src="static/img/skills/java.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="C"><img src="static/img/skills/c.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="C++"><img src="static/img/skills/c-plus-plus.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Bash"><img src="static/img/skills/bash.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="JavaScript"><img src="static/img/skills/javascript.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="HTML"><img src="static/img/skills/html-5.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="CSS"><img src="static/img/skills/css-3.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="AngularJS"><img src="static/img/skills/angular.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Bootstrap"><img src="static/img/skills/bootstrap.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="jQuery"><img src="static/img/skills/jquery.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Django"><img src="static/img/skills/django.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Qt"><img src="static/img/skills/qt.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="PostgreSQL"><img src="static/img/skills/postgre-sql.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Git"><img src="static/img/skills/git.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Github"><img src="static/img/skills/github.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Bitbucket"><img src="static/img/skills/bitbucket.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Gitlab"><img src="static/img/skills/gitlab.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Linux"><img src="static/img/skills/linux.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Windows"><img src="static/img/skills/windows.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Gimp"><img src="static/img/skills/gimp.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Inkscape"><img src="static/img/skills/inkscape.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Microsoft Office"><img src="static/img/skills/ms-office.png"></div>
     </div>
   </div>
 </section>
@@ -259,6 +259,7 @@
       var hash = this.hash;
       $('body').animate({ scrollTop: $(hash).offset().top - $('.navbar-header').height()}, 800, function(){});
     });
+    $('[data-toggle="tooltip"]').tooltip();
   });
 
   window.sr = ScrollReveal();
