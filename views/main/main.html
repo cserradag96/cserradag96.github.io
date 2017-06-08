@@ -34,7 +34,7 @@
     <span translate="cover_text0"></span>
     <h1  translate="cover_text1"></h1>
     <div class="center-content">
-      <a class="btn btn-parallax" translate="cover_button0" ng-href="{{ resume }}" download="cserradag96-resume.pdf"></a>
+      <a class="btn btn-parallax" translate="cover_button0" ng-href="{{ resume }}" target="_blank"></a>
     </div>
   </div>
   <div class="parallax-footer">
@@ -260,18 +260,4 @@
   window.sr = ScrollReveal();
   sr.reveal('.reveal', {duration: 1500});
   sr.reveal('.flip-img', {duration: 500});
-
-  if ( ! Modernizr.adownload ) {
-      var $link = $('a');
-
-      $link.each(function() {
-          var $download = $(this).attr('download');
-
-          if (typeof $download !== typeof undefined && $download !== false) {
-        var $el = $('<div>').addClass('download-instruction').text('Right-click and select "Download Linked File"');
-        $el.insertAfter($(this));
-          }
-
-      });
-  }
 </script>
