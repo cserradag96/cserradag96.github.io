@@ -50,13 +50,13 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       // About me section
       about_me       : "acerca de mi",
       about_me_text0 : "Soy estudiante de ingeniería de la computación en la universidad más prestigiosa de Venezuela, la Universidad Simón Bolívar (USB). Me encuentro en el cuarto año de los cinco que componen la \
-                        carrera y a la fecha he cursado multitud de asignaturas geniales, entre los cuales puedo resaltar los de lógica simbólica, matemática discreta, algoritmos, sistemas operativos, bases de datos \
+                        carrera y a la fecha he cursado multitud de asignaturas geniales, entre los cuales puedo resaltar las de lógica simbólica, matemática discreta, algoritmos, sistemas operativos, bases de datos \
                         e ingeniería de software por su impacto e importancia en mi formación profesional.",
       about_me_text1 : "Estoy muy agradecido por estudiar en una universidad con tan alto grado de excelencia educativa, sobre todo considerando el país en donde vivo, sin embargo, mis ansias de conocimiento no quedan\
-                        satisfechas solo con lo que aprendo allí y es por eso que he crecido enormemente como desarrollador siendo autodidacta y participando en numerosos proyectos y eventos.",
+                        satisfechas sólo con lo que aprendo allí y es por eso que he crecido enormemente como desarrollador siendo autodidacta y participando en numerosos proyectos y eventos.",
       about_me_text2 : "Mi búsqueda de conocimiento me ha llevado al mundo laboral mediante el desarrollo web, en el cual he estado especializándome desde hace un tiempo, en especial en la rama del front-end, sin \
                         embargo, no me limito solo a esta área, tengo conocimientos en back-end y una de mis metas actuales en convertirme en desarrollador web full stack.",
-      about_me_text3 : "Pero lo anterior no significa que solo me limite al desarrollo web, pues me apasionan muchos otros temas y he desarrollado todo tipo de software en el camino. Me considero talentoso, aprendo \
+      about_me_text3 : "Pero lo anterior no significa que sólo me limite al desarrollo web, pues me apasionan muchos otros temas y he desarrollado todo tipo de software en el camino. Me considero talentoso, aprendo \
                         rápido, y siempre intento dar lo mejor de mí en mi trabajo y resulta muy fácil hacerlo porque amo lo que hago.",
 
       // Skills section
@@ -79,8 +79,8 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       // Experience section
       experience       : "experiencia",
       experience_text0 : "Comencé a programar a la edad de 16 años, poco antes de iniciar mis estudios universitarios y el lenguaje de programación con el que me inicié fue JavaScript, no lo escogí por ninguna razón \
-                          en particular, solo había escuchado mucho de él y me pareció divertido aprenderlo. Al mismo tiempo sin darme cuenta empecé a aprender algo de HTML y CSS para acompañar los scripts que \
-                          desarrollaba y llegue a hacer cosas muy geniales como por ejemplo una página que generaba una historia aleatoria dependiendo de ciertas preguntas que se le hacían al usuario.",
+                          en particular, sólo había escuchado mucho de él y me pareció divertido aprenderlo. Al mismo tiempo sin darme cuenta empecé a aprender algo de HTML y CSS para acompañar los scripts que \
+                          desarrollaba y llegué a hacer cosas muy geniales como por ejemplo una página que generaba una historia aleatoria dependiendo de ciertas preguntas que se le hacían al usuario.",
       experience_text1 : "Han pasado 4 años desde entonces y he acumulado muchísima experiencia tanto en mis investigaciones personales como en los numerosos proyectos que me ha tocado desarrollar para mis asignaturas\
                           en la universidad y ahora también en el campo laboral.",
       experience_text2 : "El primer \"trabajo\" que tuve fue cuando fui elegido por mis compañeros de la carrera como el Coordinador de Información y Tecnología del Centro de Estudiantes de Ingeniería de la Computación\
@@ -146,7 +146,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       // About me section
       about_me       : "about me",
       about_me_text0 : "Soy estudiante de ingeniería de la computación en la universidad más prestigiosa de Venezuela, la <a href='http://www.usb.ve/'>Universidad Simón Bolívar (USB)</a>. Me encuentro en el cuarto año\
-                       de los cinco que componen la carrera y a la fecha he cursado multitud de asignaturas geniales, entre los cuales puedo resaltar los de lógica simbólica, matemática discreta, algoritmos, sistemas \
+                       de los cinco que componen la carrera y a la fecha he cursado multitud de asignaturas geniales, entre los cuales puedo resaltar las de lógica simbólica, matemática discreta, algoritmos, sistemas \
                        operativos, bases de datos e ingeniería de software por su impacto e importancia en mi formación profesional.",
       about_me_text1 : "Estoy muy agradecido por estudiar en una universidad con tan alto grado de excelencia educativa, sobretodo considerando el país en donde vivo, sin embargo, mis ansias de conocimiento no quedan\
                        satisfechas solo con lo que aprendo allí y es por eso que he crecido enormemente como desarrollador siendo autodidacta y participando en numerosos proyectos y eventos.",
