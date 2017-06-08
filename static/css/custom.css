@@ -92,9 +92,9 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 /*  Images                          */
 /************************************/
 
-.img-small  { height: 24px; width: 24px; }
-.img-medium { height: 48px; width: 48px; }
-.img-large  { height: 72px; width: 72px; }
+.img-small  { height: 64px; width: 64px; }
+.img-medium { height: 128px; width: 128px; }
+.img-large  { height: 256px; width: 256px; }
 
 .flip-img { width: 300px; height: 200px; display: inline-block; margin: 0.5em;}
 .flip-img figure { margin: 0; padding: 0; position: relative; cursor: pointer; }
@@ -159,6 +159,7 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 
 .img-container { text-align: center; margin: 0.75em; display: inline-block; }
 .img-container > img, .img-container > h5 { text-align: center;  margin: 0 auto; display: block; }
+.img-container > span { text-align: center;  display: block; text-transform: uppercase; font-family: Montserrat; font-size: 12pt; padding: .5em;}
 
 /************************************/
 /*  Buttons                         */
