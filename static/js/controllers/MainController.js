@@ -11,6 +11,7 @@ cserradag96.controller('MainController', function($scope, $rootScope, $http, $st
     $scope.changeLang = function() {
         if ($rootScope.lang =='es') { $rootScope.lang = 'en'; }
         else { $rootScope.lang = 'es'; };
+        $scope.resume = $rootScope.baseURL + 'static/files/resume/' + $rootScope.lang + '.pdf';
         $translate.use($rootScope.lang);
     };
 
@@ -31,6 +32,6 @@ cserradag96.controller('MainController', function($scope, $rootScope, $http, $st
     /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     - VIEW CONFIGURATION
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    $scope.resume = $rootScope.baseURL + 'static/img/bg0.jpg';
+    $scope.resume = $rootScope.baseURL + 'static/files/resume/' + $rootScope.lang + '.pdf';
 
 });

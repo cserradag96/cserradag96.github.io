@@ -31,11 +31,11 @@
 <!-- Cover section -->
 <section id="cover" class="header parallax">
   <div class="parallax-content">
-    <span translate="main_text0"></span>
-    <h1  translate="main_text1"></h1>
-    <!-- <div class="center-content">
-      <a class="btn btn-parallax" ng-href="{{ resume }}" download="cserradag96-resume.pdf">Descargar CV</a>
-    </div> -->
+    <span translate="cover_text0"></span>
+    <h1  translate="cover_text1"></h1>
+    <div class="center-content">
+      <a class="btn btn-parallax" ng-href="{{ resume }}" download="cserradag96-resume.pdf" translate="cover_button0"></a>
+    </div>
   </div>
   <div class="parallax-footer">
     <a class="btn-scroll" href="#about_me"><i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i></a>
@@ -44,8 +44,8 @@
 
 <!-- About me section -->
 <section id="about_me" class="bg-light">
-  <div class="section-title"><h2 translate="about_me"></h2></div>
-  <div class="container-fluid section-content">
+  <div class="section-title reveal"><h2 translate="about_me"></h2></div>
+  <div class="container-fluid section-content reveal">
     <div class="col-md-4 col-xs-12">
     </div>
     <div class="col-md-8 col-xs-12">
@@ -63,8 +63,8 @@
 
 <!-- Skills section -->
 <section id="skills" class="bg-white">
-  <div class="section-title"><h2 translate="skills"></h2></div>
-  <div class="container-fluid section-content">
+  <div class="section-title reveal"><h2 translate="skills"></h2></div>
+  <div class="container-fluid section-content reveal">
     <div class="col-md-8 col-xs-12">
       <div class="col-md-6 col-xs-12">
         <p translate="skills_text0"></p>
@@ -108,8 +108,8 @@
 
 <!-- Experience section -->
 <section id="experience" class="bg-light">
-  <div class="section-title"><h2 translate="experience"></h2></div>
-  <div class="container-fluid section-content">
+  <div class="section-title reveal"><h2 translate="experience"></h2></div>
+  <div class="container-fluid section-content reveal">
     <div class="container-fluid">
       <div class="col-md-4 col-xs-12">
         <p translate="experience_text0"></p>
@@ -129,7 +129,7 @@
 
 <!-- Projects section -->
 <section id="projects" class="bg-white">
-  <div class="section-title"><h2 translate="projects"></h2></div>
+  <div class="section-title reveal"><h2 translate="projects"></h2></div>
   <div class="container-fluid section-content center-content">
     <div class="flip-img">
       <figure>
@@ -208,8 +208,8 @@
 
 <!-- Contact me section -->
 <section id="contact_me" class="footer bg-dark">
-  <div class="section-title"><h2 translate="contact_me"></h2></div>
-  <div class="container-fluid section-content">
+  <div class="section-title reveal"><h2 translate="contact_me"></h2></div>
+  <div class="container-fluid section-content reveal">
     <div class="col-md-4 col-xs-12">
       <h3 translate="contact_me_text0" class="text-center"></h3>
       <form name="contactForm" ng-submit="goToRecaptcha(sender)">
@@ -258,7 +258,6 @@
   });
 
   window.sr = ScrollReveal();
-  sr.reveal('.flip-img', 250);
-  sr.reveal('.section-title', {duration: 1500});
-  sr.reveal('.section-content', {duration: 1500});
+  sr.reveal('.reveal', {duration: 1500});
+  sr.reveal('.flip-img', {duration: 500});
 </script>
