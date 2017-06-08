@@ -249,7 +249,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
 # INITIAL GLOBAL SETTINGS
 #########################################################################################################################################################################################################################*/
 cserradag96.run(function ($rootScope) {
-    $rootScope.baseURL = "//cserradag96.github.io/";                   /* Server domain */
+    $rootScope.baseURL = "https://cserradag96.github.io/";                   /* Server domain */
     $rootScope.apiURL  = "static/apis/";                                     /* Server domain */
     $rootScope.lang    = 'es';                                               /* Default lenguage */
     $rootScope.grcAPI  = "https://www.google.com/recaptcha/api/siteverify "  /* Google recaptcha server side verify api */
