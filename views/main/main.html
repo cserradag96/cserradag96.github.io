@@ -260,4 +260,18 @@
   window.sr = ScrollReveal();
   sr.reveal('.reveal', {duration: 1500});
   sr.reveal('.flip-img', {duration: 500});
+
+  if ( ! Modernizr.adownload ) {
+      var $link = $('a');
+
+      $link.each(function() {
+          var $download = $(this).attr('download');
+
+          if (typeof $download !== typeof undefined && $download !== false) {
+        var $el = $('<div>').addClass('download-instruction').text('Right-click and select "Download Linked File"');
+        $el.insertAfter($(this));
+          }
+
+      });
+  }
 </script>
