@@ -159,7 +159,18 @@ p { font-family: Montserrat; text-align: justify; padding: 0.5em;}
 
 .img-container { text-align: center; margin: 0.75em; display: inline-block; }
 .img-container > img, .img-container > h5 { text-align: center;  margin: 0 auto; display: block; }
-.img-container > span { text-align: center;  display: block; text-transform: uppercase; font-family: Montserrat; font-size: 12pt; padding: .5em;}
+.img-container > span {
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 12pt;
+    padding: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    background: #FFFFFF;
+    border: 2px solid #212121;
+}
 
 /************************************/
 /*  Buttons                         */
