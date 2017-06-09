@@ -66,7 +66,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       skills_text1 : "Entre los lenguajes que domino actualmente destacan: Python (el cual es mi lenguaje preferido), C/C++, Ruby, Java, JavaScript, Bash, Matlab y lenguaje ensamblador. En cuanto a las tecnologías \
                       para desarrollo web, poseo un gran dominio de HTML5, CSS3 y el ya mencionado JavaScript, acompañados además por el manejo de frameworks y librerías como: jQuery, AJAX, Bootstrap, AngularJS, \
                       django y WEB2PY.",
-      skills_text2 : "También se trabajar con el framework Qt de manera muy profesional para crear interfaces para programas de escritorio, y al mismo tiempo suelo emparejarlo con Python mediante la librería PyQt. \
+      skills_text2 : "También sé trabajar con el framework Qt de manera muy profesional para crear interfaces para programas de escritorio, y al mismo tiempo suelo emparejarlo con Python mediante la librería PyQt. \
                       Para la parte de bases de datos, poseo buenos conocimientos para el diseño de modelos relaciones y su traducción a SQL. Solo he trabajado con PostgreSQL como manejador de base de datos, y en \
                       algunos casos he usado ORM’s como SQLAlchemy junto a él.",
       skills_text3 : "Soy fanático del control de versiones, así como de la legibilidad, modularización y mantenimiento del código. Utilizo git para todos mis proyectos, ya sea que se encuentren alojados en GitHub, \
