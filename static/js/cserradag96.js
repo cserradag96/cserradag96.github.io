@@ -49,49 +49,50 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
 
       // About me section
       about_me       : "acerca de mi",
-      about_me_text0 : "Soy estudiante de ingeniería de la computación en la universidad más prestigiosa de Venezuela, la <a href='http://www.usb.ve'>Universidad Simón Bolívar (USB)</a>. Me encuentro en el cuarto año\
-                        de los cinco que componen la carrera y a la fecha he cursado multitud de asignaturas geniales, entre los cuales puedo resaltar las de lógica simbólica, matemática discreta, algoritmos, sistemas\
-                        operativos, bases de datos e ingeniería de software por su impacto e importancia en mi formación profesional.",
-      about_me_text1 : "Estoy muy agradecido por estudiar en una universidad con tan alto grado de excelencia educativa, sobre todo considerando el país en donde vivo, sin embargo, mis ansias de conocimiento no quedan\
-                        satisfechas sólo con lo que aprendo allí y es por eso que he crecido enormemente como desarrollador siendo autodidacta y participando en numerosos proyectos y eventos.",
+      about_me_text0 : "Soy estudiante de ingeniería de la computación en la universidad más prestigiosa de Venezuela, la Universidad Simón Bolívar (USB). Me encuentro en el cuarto año, de los cinco que componen la \
+                        carrera, y a la fecha he cursado multitud de asignaturas geniales, entre las cuales puedo resaltar las siguientes: lógica simbólica, matemática discreta, algoritmos, sistemas operativos, bases \
+                        de datos e ingeniería de software por su impacto e importancia en mi formación profesional.",
+      about_me_text1 : "Es un honor para mí estudiar en una universidad con tan alto grado de excelencia educativa, sobre todo considerando las circunstancias presentes en donde vivo. Sin embargo, mis ansias de \
+                        conocimiento no quedan satisfechas sólo con lo que aprendo allí y es por eso que he crecido enormemente como desarrollador siendo autodidacta y participando en numerosos proyectos y eventos.",
       about_me_text2 : "Mi búsqueda de conocimiento me ha llevado al mundo laboral mediante el desarrollo web, en el cual he estado especializándome desde hace un tiempo, en especial en la rama del front-end, sin \
-                        embargo, no me limito solo a esta área, tengo conocimientos en back-end y una de mis metas actuales en convertirme en desarrollador web full stack.",
-      about_me_text3 : "Pero lo anterior no significa que sólo me limite al desarrollo web, pues me apasionan muchos otros temas y he desarrollado todo tipo de software en el camino. Me considero talentoso, aprendo \
-                        rápido, y siempre intento dar lo mejor de mí en mi trabajo y resulta muy fácil hacerlo porque amo lo que hago.",
+                        embargo, no me limito solo a esta área, tengo conocimientos en back-end y una de mis metas actuales es convertirme en desarrollador web full stack.",
+      about_me_text3 : "Lo anterior no significa que sólo me limite al desarrollo web, pues me apasionan muchos otros temas y he desarrollado todo tipo de software en el camino. Me considero talentoso, aprendo rápido,\
+                        y siempre intento dar lo mejor de mí en mi trabajo y resulta muy fácil hacerlo porque amo lo que hago.",
 
       // Skills section
       skills       : "habilidades",
       skills_text0 : "Poseo muchas habilidades que me permiten ejercer una gran diversidad de trabajos relacionados con el desarrollo de software, y entre ellas están el dominio avanzado de múltiples lenguajes de \
                       programación, frameworks de desarrollo web y de escritorio, IDE’s, DBMS y programas de edición digital.",
-      skills_text1 : "Entre los lenguajes que domino actualmente destacan: Python (el cual es mi lenguaje preferido), C/C++, Ruby, Java, JavaScript, Bash, Matlab y lenguaje ensamblador. En cuanto a las tecnologías \
-                      para desarrollo web, poseo un gran dominio de HTML5, CSS3 y el ya mencionado JavaScript, acompañados además por el manejo de frameworks y librerías como: jQuery, AJAX, Bootstrap, AngularJS, \
-                      django y WEB2PY.",
+      skills_text1 : "Entre los lenguajes que domino actualmente destacan: Python (el cual es mi preferido), C/C++, Ruby, Java, JavaScript, Bash, Matlab y lenguaje ensamblador. En cuanto a las tecnologías para \
+                      desarrollo web, poseo un gran dominio de HTML5, CSS3 y el ya mencionado JavaScript, acompañados además por el manejo de frameworks y librerías como: jQuery, AJAX, Bootstrap, AngularJS, django y \
+                      WEB2PY.",
       skills_text2 : "También sé trabajar con el framework Qt de manera muy profesional para crear interfaces para programas de escritorio, y al mismo tiempo suelo emparejarlo con Python mediante la librería PyQt. \
-                      Para la parte de bases de datos, poseo buenos conocimientos para el diseño de modelos relaciones y su traducción a SQL. Solo he trabajado con PostgreSQL como manejador de base de datos, y en \
+                      Para la parte de bases de datos, poseo buenos conocimientos para el diseño de modelos, relaciones y su traducción a SQL. Solo he trabajado con PostgreSQL como manejador de base de datos, y en \
                       algunos casos he usado ORM’s como SQLAlchemy junto a él.",
       skills_text3 : "Soy fanático del control de versiones, así como de la legibilidad, modularización y mantenimiento del código. Utilizo git para todos mis proyectos, ya sea que se encuentren alojados en GitHub, \
                       Bitbucket o Gitlab. He trabajado en varios entornos de desarrollo como por ejemplo Eclipse, pero prefiero usar editores texto como Sublime Text o Atom. Siempre escribo y comento mi código en \
                       inglés, y trato de seguir el estilo recomendado para cada lenguaje, aunque siempre le doy mi toque personal para mejorar la legibilidad.",
-      skills_text4 : "Me gusta mucho la parte del diseño y es por eso que manejo programas como GIMP e Inkscape, aunque mi dominio sobre ellos sigue siendo muy básico.",
-      skills_text5 : "Sumado a todo lo que ya he mencionado, tengo gran dominio de muchos otros programas, por mencionar algunos de ellos tenemos a Microsoft Office, LibreOffice, WPS Office, Google Docs, StartUML, \
-                      Dia, Visual Paradigm, DbVisualizer, Mars, entre otros.",
+      skills_text4 : "Me gusta mucho la parte del diseño y es por eso que manejo programas como GIMP e Inkscape, aunque mi dominio sobre ellos es por el momento muy básico.",
+      skills_text5 : "Sumado a todo lo que ya he mencionado, tengo gran dominio de muchos otros programas, algunos de ellos son: Microsoft Office, LibreOffice, WPS Office, Google Docs, StartUML, Dia, Visual Paradigm, \
+                      DbVisualizer y Mars.",
 
       // Experience section
       experience       : "experiencia",
       experience_text0 : "Comencé a programar a la edad de 16 años, poco antes de iniciar mis estudios universitarios y el lenguaje de programación con el que me inicié fue JavaScript, no lo escogí por ninguna razón \
                           en particular, sólo había escuchado mucho de él y me pareció divertido aprenderlo. Al mismo tiempo sin darme cuenta empecé a aprender algo de HTML y CSS para acompañar los scripts que \
                           desarrollaba y llegué a hacer cosas muy geniales como por ejemplo una página que generaba una historia aleatoria dependiendo de ciertas preguntas que se le hacían al usuario.",
-      experience_text1 : "Han pasado 4 años desde entonces y he acumulado muchísima experiencia tanto en mis investigaciones personales como en los numerosos proyectos que me ha tocado desarrollar para mis asignaturas\
-                          en la universidad y ahora también en el campo laboral.",
-      experience_text2 : "El primer \"trabajo\" que tuve fue cuando fui elegido por mis compañeros de la carrera como el Coordinador de Información y Tecnología del Centro de Estudiantes de Ingeniería de la Computación\
-                          de la Universidad Simón Bolívar para el periodo 2016-2017. Sigo ocupando este cargo y para poder llevar el peso que conlleva he tenido que aprender muchísimo.",
-      experience_text3 : "Me ha tocado diseñar y organizar eventos de programación competitiva, aprender técnicas de automatización y manejo de redes sociales para difusión masiva de información, aprender a utilizar \
-                          django y otras tecnologías de desarrollo web para poder darle mantenimiento a ciertas aplicaciones con las que cuenta el centro de estudiantes, y además desarrollar un sistema de ventas \
-                          comercial, mantenible y multiplataforma.",
-      experience_text4 : "Al llegar al final del tercer año de la carrera, participé en dos proyectos de desarrollo de software necesarios para poder aprobar ciertas asignaturas. Ambos proyectos fueron con clientes \
-                          reales, pero usando metodologías y tecnologías diferentes. En uno de ellos se trabajó con django y en el otro con web2py, en ambos cumplí el rol de desarrollador front-end, pero en el segundo \
-                          además cumplí como rol de líder del proyecto. Adquirí mucha experiencia con estos dos proyectos y fue la primera vez que interactué con clientes.",
-      experience_text5 : "Recientemente me uní al campo laboral oficialmente y me encuentro trabajando en dos proyectos de desarrollo web, ambos con AngularJS y con excelentes resultados.",
+      experience_text1 : "Han pasado 4 años desde entonces y he acumulado muchísima experiencia tanto en mis investigaciones personales como en los numerosos proyectos que he desarrollado para mis asignaturas en la \
+                          universidad y ahora también en el campo laboral.",
+      experience_text2 : "Actualmente me desempeño como Coordinador de Información y Tecnología del Centro de Estudiantes de Ingeniería de la Computación de la Universidad Simón Bolívar (periodo 2016-2017), \
+                          cargo para el cual fui elegido por mis compañeros de la carrera, lo que ha resultado ser todo un reto, puesto que para lograr estar a la altura de lo que conlleva este puesto, he tenido \
+                          que aprender muchísimo.",
+      experience_text3 : "He tenido la oportunidad de diseñar y organizar eventos de programación competitiva, aprender técnicas de automatización y manejo de redes sociales para difusión masiva de información, \
+                          aprender a utilizar django y otras tecnologías de desarrollo web para poder darle mantenimiento a ciertas aplicaciones con las que cuenta el centro de estudiantes, y además desarrollar un \
+                          sistema de ventas comercial, mantenible y multiplataforma.",
+      experience_text4 : "Al llegar al final del tercer año de la carrera, participé en dos proyectos de desarrollo de software necesarios para poder aprobar ciertas asignaturas. Ambos proyectos se desarrollaron para \
+                          clientes reales, pero usando metodologías y tecnologías diferentes. En uno de ellos se trabajó con django y en el otro con web2py, en ambos cumplí el rol de desarrollador front-end, pero en \
+                          el segundo además cumplí como rol de líder del proyecto. Adquirí mucha experiencia con estos dos proyectos y fue la primera vez que interactué con clientes.",
+      experience_text5 : "Recientemente me uní al campo laboral oficialmente y me encuentro trabajando en dos proyectos de desarrollo web, ambos con AngularJS y los cuales han arrojado excelentes resultados.",
 
       // Projects section
       projects       : "proyectos",
