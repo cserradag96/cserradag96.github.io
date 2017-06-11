@@ -146,43 +146,43 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
 
       // About me section
       about_me       : "about me",
-      about_me_text0 : "I am a computer engineering student at Venezuela's most prestigious university, the <a href='http://www.usb.ve'>Simón Bolívar University (USB)</a>. I am in the fourth year of the five that make\
-                        up the career and to date I have studied many great subjects, among which I can highlight those of symbolic logic, discrete mathematics, algorithms, operating systems, databases and software \
-                        engineering by its Impact and importance in my professional training.",
-      about_me_text1 : "I am very grateful to study in a university with such a high degree of educational excellence, especially considering the country where I live, however, my craving for knowledge is not only \
-                        satisfied with what I learn there and that is why I have grown enormously as developer being self-taught and participating in numerous projects and events.",
-      about_me_text2 : "My knowledge search has taken me to the work world through web development, in which I have been specializing for some time, especially in the front-end branch, however, I am not limited only \
-                        to this area, I have knowledge in Back-end and one of my current goals is become me a full-stack web developer.",
-      about_me_text3 : "But the above does not mean that I limit myself to web development, because I am passionate about many other issues and I have developed all kinds of software along the way. I consider myself \
-                        talented, I learn fast, and I always try to give the best of me in my work and it is very easy to do it because I love what I do.",
+      about_me_text0 : "I am a computer engineering student at Venezuela's most prestigious university, Universidad Simón Bolívar (USB). I am currently in the fourth out of five years that make up the full length of \
+                        the career. To this date I have approved many great subjects. However, the most relevant ones to me, because of the impact and importance they have had in my professional training are the \
+                        following: symbolic logic, discrete mathematics, algorithms, operating systems, databases and software engineering.",
+      about_me_text1 : "It is an honor to me being a student at a university which demands such high level of academic excellence, especially when taking into consideration the current situation the country where I \
+                        live in is undergoing. However valuable what I have learned there, it does not fully quench my thirst for knowledge, which is why I have come to acquire the necessary information to become a \
+                        developer, mostly by being self-taught and through participating in numerous projects and events.",
+      about_me_text2 : "My search for knowledge has driven me to join the work force through web development, in which I have been specializing for some time now. I have concentrated in the front-end branch, however,\
+                        I do not focus only in this area, I also have working knowledge of Back-end. Currently, one of my goals is to become a full-stack web developer.",
+      about_me_text3 : "The aforementioned does not mean that my knowledge is limited to web development, as I am passionate about many other aspects, as a matter of fact; I have developed all kinds of software along \
+                        the way. I consider myself to be talented, a fast learner, and I always try to give my best at work, which it is very easy to do it because I love what I do.",
 
       // Skills section
       skills       : "skills",
-      skills_text0 : "I have many skills that allow me to exert a great diversity of works related to software development, and among them are the advanced domain of multiple programming languages, web and desktop \
-                      development frameworks, IDE's, DBMS and digital editing programs.",
-      skills_text1 : "Among the languages I currently master are: Python (which is my preferred language), C / C ++, Ruby, Java, JavaScript, Bash, Matlab and assembly language. As for the technologies for web \
-                      development, I have a great command of HTML5, CSS3 and the aforementioned JavaScript, also accompanied by the management of frameworks and libraries such as jQuery, AJAX, Bootstrap, AngularJS, \
-                      django and WEB2PY.",
-      skills_text2 : "I also work with the Qt framework in a very professional way to create interfaces for desktop programs, and at the same time I usually pair it with Python using the PyQt library. For the part of \
-                      databases, I have good knowledge for the design of relations models and their translation to SQL. I have only worked with PostgreSQL as a database manager, and in some cases I have used ORM's as \
-                      SQLAlchemy next to it.",
-      skills_text3 : "I'm a fan of version control, as well as readability, modularization and code maintenance. I use git for all my projects, whether they're hosted on GitHub, Bitbucket or Gitlab. I have worked in \
-                      several development environments like Eclipse, but I prefer to use text editors like Sublime Text or Atom. I always write and comment my code in English, and I try to follow the recommended style \
-                      for each language, although I always give it my personal touch to improve readability.",
-      skills_text4 : "I really like the design part and that's why I know how to handle programs like GIMP and Inkscape, although my mastery over them is still very basic.",
-      skills_text5 : "In addition to everything I have already mentioned, I have great command of many other programs, to mention some of them we have Microsoft Office, LibreOffice, WPS Office, Google Docs, StartUML, \
-                      Dia, Visual Paradigm, DbVisualizer, Mars, among others.",
+      skills_text0 : "I have many skills that allow me to perform a great deal of tasks related to software development. Among those skills, an advanced domain of multiple programming languages, web and desktop \
+                      development frameworks, IDE's, DBMS and digital editing programs stand out.",
+      skills_text1 : "Among the languages I currently master are: Python (which is my favorite), C / C ++, Ruby, Java, JavaScript, Bash, Matlab and assembling language. Regarding technologies for web development, I \
+                      have a great command of HTML5, CSS3 and the aforementioned JavaScript, also complemented by the use of frameworks and libraries such as jQuery, AJAX, Bootstrap, AngularJS, django and WEB2PY.",
+      skills_text2 : "I can also work with Qt framework in a very professional way to create interfaces for desktop programs, while usually pairing it with Python by using the PyQt library. In reference to databases, \
+                      I have good knowledge for designing relations, models and their translation to SQL. I have only worked with PostgreSQL as a database manager, and in some cases I have used ORM's along with \
+                      SQLAlchemy.",
+      skills_text3 : "I'm a fan of version-control, as well as readability, modularization and code maintenance. I use git for all my projects, whether they are hosted on GitHub, Bitbucket or Gitlab. I have worked in \
+                      several development environments like Eclipse, for instance,  but I prefer to use text editors like Sublime Text or Atom. I always write and comment my code in English, and I try to follow the \
+                      recommended style for each language, although I always give it my personal touch to improve readability.",
+      skills_text4 : "I really like designing and that is why I use programs like GIMP and Inkscape, although my mastery of them is, at the moment, very basic.",
+      skills_text5 : "In addition to the information provided above, I have great command of many other programs; some of them are Microsoft Office, LibreOffice, WPS Office, Google Docs, StartUML, Dia, Visual \
+                      Paradigm, DbVisualizer, Mars.",
 
       // Experience section
       experience       : "experience",
-      experience_text0 : "I started programming at the age of 16, shortly before starting my university studies and the programming language that I started with was JavaScript, I did not choose it for any particular \
-                          reason, I had only heard a lot of it and I found it fun to learn it . At the same time without realizing it I started to learn a little bit of HTML and CSS to accompany the scripts that I \
-                          developed and I did very cool things like a page that generates a random story depending on certain questions that were asked to the user.",
-      experience_text1 : "Four years have passed since then and I have accumulated a lot of experience both in my personal investigations and in the numerous projects that I have developed for my subjects in the \
-                          university and now also in the labor field.",
+      experience_text0 : "I started programming at the age of 16, not much long before enrolling in university, the programming language that I started using back then was JavaScript, I did not choose it for any \
+                          particular reason, I had only heard a lot about it, and I found it fun to learn. At the same time, without realizing it, I started learning a little of HTML and CSS as a complement to the \
+                          scripts that I developed, and I did grand things such as a page that generates a random stories based upon certain questions asked to the users.",
+      experience_text1 : "Four years have elapsed since then, and I have accumulated a lot of experience in both, my personal research and the numerous projects I have developed as required by academic subjects, and \
+                          now in the labor world as well.",
       experience_text2 : "The first \"job\" I had was when I was chosen by my career mates as the Information and Technology Coordinator of the Simón Bolívar University Computer Engineering Center for the period \
                           2016-2017. I continue to hold this position and in order to carry the weight it entails I have had to learn a lot.",
-      experience_text3 : "I had to design and organize competitive programming events, learn automation techniques and manage social networks for massive information dissemination, learn how to use django and other \
+      experience_text3 : "I had to design and organize competitive programming events, learn automation techniques and manage social networks for massive information dissemination, learn how to use django and other\
                           web development technologies to be able to maintain certain applications of the students center, and also develop a commercial, maintainable and multiplatform sales system.",
       experience_text4 : "At the end of the third year of the career, I participated in two software development projects required to pass certain subjects. Both projects were with real clients, but using different \
                           methodologies and technologies. In one of them I worked with django and in the other with web2py, in both I fulfilled the role of front-end developer, but in the second I also fulfilled as \
