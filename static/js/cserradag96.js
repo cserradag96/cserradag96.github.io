@@ -84,14 +84,14 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       experience_text1 : "Han pasado 4 años desde entonces y he acumulado muchísima experiencia tanto en mis investigaciones personales como en los numerosos proyectos que he desarrollado para mis asignaturas en la \
                           universidad y ahora también en el campo laboral.",
       experience_text2 : "Actualmente me desempeño como Coordinador de Información y Tecnología del Centro de Estudiantes de Ingeniería de la Computación de la Universidad Simón Bolívar (periodo 2016-2017), \
-                          cargo para el cual fui elegido por mis compañeros de la carrera, lo que ha resultado ser todo un reto, puesto que para lograr estar a la altura de lo que conlleva este puesto, he tenido \
+                          cargo para el cual fui elegido por mis compañeros de la carrera, lo que ha resultado ser todo un reto, debido a que para lograr estar a la altura de lo que conlleva este cargo, he tenido \
                           que aprender muchísimo.",
       experience_text3 : "He tenido la oportunidad de diseñar y organizar eventos de programación competitiva, aprender técnicas de automatización y manejo de redes sociales para difusión masiva de información, \
                           aprender a utilizar django y otras tecnologías de desarrollo web para poder darle mantenimiento a ciertas aplicaciones con las que cuenta el centro de estudiantes, y además desarrollar un \
                           sistema de ventas comercial, mantenible y multiplataforma.",
       experience_text4 : "Al llegar al final del tercer año de la carrera, participé en dos proyectos de desarrollo de software necesarios para poder aprobar ciertas asignaturas. Ambos proyectos se desarrollaron para \
                           clientes reales, pero usando metodologías y tecnologías diferentes. En uno de ellos se trabajó con django y en el otro con web2py, en ambos cumplí el rol de desarrollador front-end, pero en \
-                          el segundo además cumplí como rol de líder del proyecto. Adquirí mucha experiencia con estos dos proyectos y fue la primera vez que interactué con clientes.",
+                          el segundo cumplí además como líder del proyecto. Adquirí mucha experiencia con estos dos proyectos y fue la primera vez que interactué con clientes.",
       experience_text5 : "Recientemente me uní al campo laboral oficialmente y me encuentro trabajando en dos proyectos de desarrollo web, ambos con AngularJS y los cuales han arrojado excelentes resultados.",
 
       // Projects section
