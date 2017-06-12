@@ -128,7 +128,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       contact_me_form2 : "Escriba un mensaje...",
 
       // Recaptcha
-      recaptcha_text0 : "Por favor completa lo siguiente para continuar",
+      recaptcha_text0 : "Por favor resuelva el reCAPTCHA para continuar",
       recaptcha_text1 : "Continuar",
       recaptcha_text2 : "Se ha enviado el correo :D",
       recaptcha_text3 : "Volver al portafolio"
@@ -223,7 +223,7 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
       contact_me_form2 : "Write a message...",
 
       // Recaptcha
-      recaptcha_text0 : "Please complete the following to continue",
+      recaptcha_text0 : "Please resolve the reCAPTCHA to continue",
       recaptcha_text1 : "Continue",
       recaptcha_text2 : "The email has been sent :D",
       recaptcha_text3 : "Back to portfolio"
