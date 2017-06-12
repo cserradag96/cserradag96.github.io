@@ -255,9 +255,9 @@
 <script>
   $(function(){
     $(".btn-scroll").on('click', function(event) {
-      event.preventDefault();
+      event.preventDefault(event);
       var hash = this.hash;
-      $('body').animate({ scrollTop: $(hash).offset().top - $('.navbar-header').height()}, 800, function(){});
+      $('body, html').animate({ scrollTop: $(hash).offset().top - $('.navbar-header').height()}, 800, function(){});
     });
     $('[data-toggle="tooltip"]').tooltip();
   });
