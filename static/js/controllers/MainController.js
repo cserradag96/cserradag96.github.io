@@ -1,7 +1,7 @@
 /*#########################################################################################################################################################################################################################
 # MAIN APPLICATION CONTROLLER
 #########################################################################################################################################################################################################################*/
-cserradag96.controller('MainController', function($scope, $rootScope, $http, $state, $translate, SweetAlert) {
+cserradag96.controller('MainController', function($scope, $rootScope, $state, $translate) {
 
     //$state.defaultErrorHandler(function() { /* do nothing */});
 
@@ -13,15 +13,6 @@ cserradag96.controller('MainController', function($scope, $rootScope, $http, $st
         else { $rootScope.lang = 'es'; };
         $scope.resume = $rootScope.baseURL + 'static/files/resume/' + $rootScope.lang + '.pdf';
         $translate.use($rootScope.lang);
-    };
-
-    $scope.btcQR = function() {
-        SweetAlert.swal({
-            title: "Enviar BTC",
-            text: "<img src='/static/img/donate/bitcoin.png'>",
-            html: true,
-            closeOnCancel: true
-        });
     };
 
     $scope.goToRecaptcha = function(data) {

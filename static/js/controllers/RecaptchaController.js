@@ -1,7 +1,7 @@
 /*#########################################################################################################################################################################################################################
 # RECAPTCHA CONTROLLER
 #########################################################################################################################################################################################################################*/
-cserradag96.controller('RecaptchaController', function($scope, $rootScope, $http, $state, $translate, SweetAlert) {
+cserradag96.controller('RecaptchaController', function($scope, $rootScope, $http, $state) {
 
     //$state.defaultErrorHandler(function() { /* do nothing */});
 
