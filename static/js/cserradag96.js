@@ -146,13 +146,13 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
 
       // About me section
       about_me       : "about me",
-      about_me_text0 : "I am a computer engineering student at Venezuela's most prestigious university, Universidad Simón Bolívar (USB). I am currently in the fourth out of five years that make up the full length of \
-                        the career. To this date I have approved many great subjects. However, the most relevant ones to me, because of the impact and importance they have had in my professional training are the \
-                        following: symbolic logic, discrete mathematics, algorithms, operating systems, databases and software engineering.",
+      about_me_text0 : "I am a computer engineering student at Venezuela's most prestigious university, Universidad Simón Bolívar University (USB). I am currently in the fourth out of five years that make up the full \
+                        length of the career. To this date I have approved many great subjects. However, the most relevant ones to me, because of the impact and importance they have had in my professional training are \
+                        the following: symbolic logic, discrete mathematics, algorithms, operating systems, databases and software engineering.",
       about_me_text1 : "It is an honor to me being a student at a university which demands such high level of academic excellence, especially when taking into consideration the current situation the country where I \
                         live in is undergoing. However valuable what I have learned there, it does not fully quench my thirst for knowledge, which is why I have come to acquire the necessary information to become a \
                         developer, mostly by being self-taught and through participating in numerous projects and events.",
-      about_me_text2 : "My search for knowledge has driven me to join the work force through web development, in which I have been specializing for some time now. I have concentrated in the front-end branch, however,\
+      about_me_text2 : "My search for knowledge has driven me to join the work force through web development, in which I have been specializing for some time now. I have concentrated in the front-end branch, however, \
                         I do not focus only in this area, I also have working knowledge of Back-end. Currently, one of my goals is to become a full-stack web developer.",
       about_me_text3 : "The aforementioned does not mean that my knowledge is limited to web development, as I am passionate about many other aspects, as a matter of fact; I have developed all kinds of software along \
                         the way. I consider myself to be talented, a fast learner, and I always try to give my best at work, which it is very easy to do it because I love what I do.",
@@ -170,8 +170,8 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
                       several development environments like Eclipse, for instance,  but I prefer to use text editors like Sublime Text or Atom. I always write and comment my code in English, and I try to follow the \
                       recommended style for each language, although I always give it my personal touch to improve readability.",
       skills_text4 : "I really like designing and that is why I use programs like GIMP and Inkscape, although my mastery of them is, at the moment, very basic.",
-      skills_text5 : "In addition to the information provided above, I have great command of many other programs; some of them are Microsoft Office, LibreOffice, WPS Office, Google Docs, StartUML, Dia, Visual \
-                      Paradigm, DbVisualizer, Mars.",
+      skills_text5 : "In addition to the information provided above, I have great command of many other programs; some of them are Microsoft Office, LibreOffice, WPS Office, Google Docs, StartUML, Dia, Visual Paradigm,\
+                      DbVisualizer, Mars.",
 
       // Experience section
       experience       : "experience",
@@ -180,14 +180,15 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
                           scripts that I developed, and I did grand things such as a page that generates a random stories based upon certain questions asked to the users.",
       experience_text1 : "Four years have elapsed since then, and I have accumulated a lot of experience in both, my personal research and the numerous projects I have developed as required by academic subjects, and \
                           now in the labor world as well.",
-      experience_text2 : "The first \"job\" I had was when I was chosen by my career mates as the Information and Technology Coordinator of the Simón Bolívar University Computer Engineering Center for the period \
-                          2016-2017. I continue to hold this position and in order to carry the weight it entails I have had to learn a lot.",
-      experience_text3 : "I had to design and organize competitive programming events, learn automation techniques and manage social networks for massive information dissemination, learn how to use django and other\
-                          web development technologies to be able to maintain certain applications of the students center, and also develop a commercial, maintainable and multiplatform sales system.",
-      experience_text4 : "At the end of the third year of the career, I participated in two software development projects required to pass certain subjects. Both projects were with real clients, but using different \
-                          methodologies and technologies. In one of them I worked with django and in the other with web2py, in both I fulfilled the role of front-end developer, but in the second I also fulfilled as \
-                          project leader role. I gained a lot of experience with these two projects and it was the first time I interacted with clients.",
-      experience_text5 : "I recently joined the labor field officially and I am working on two web development projects, both with AngularJS and with excellent results.",
+      experience_text2 : "At present I hold the position of Information and Technology Coordinator of the Computer Engineering student body at Universidad Simón Bolívar. I was chosen by my classmates to occupy this \
+                          position during the academic period 2016 -2017, and it has proven to be a true challenge since in order to rise up to the requirements for fulfilling this position I have had to learn a lot.",
+      experience_text3 : "I have had the opportunity to design and organize competitive programming events, as well as to learn automation techniques and social networks management for massive information \
+                          dissemination, how to use django and other web development technologies in order to be able to upkeep certain applications used by the student body, and also develop a commercial sales system \
+                          that is both maintainable and cross-platform.",
+      experience_text4 : "By the end of the third year of my university career, I participated in two software development projects as a requirement to approve certain subjects. Both projects were developed for real \
+                          clients,   therefore, different methodologies and technologies were used. In one project I worked with django and in the other with web2py. In both projects I assumed the role of front-end \
+                          developer, however, in the second I also fulfilled the role of project leader. I gained a lot of experience with these two projects and it was the first time I interacted with clients.",
+      experience_text5 : "I have recently officially joined the labor force and I am working on two web development projects, both with AngularJS which have yielded excellent results.",
 
       // Projects section
       projects       : "projects",
