@@ -49,9 +49,9 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
 
       // About me section
       about_me       : "acerca de mi",
-      about_me_text0 : "Soy estudiante de ingeniería de la computación en la universidad más prestigiosa de Venezuela, la Universidad Simón Bolívar (USB). Me encuentro en el cuarto año, de los cinco que componen la \
-                        carrera, y a la fecha he cursado multitud de asignaturas geniales, entre las cuales puedo resaltar las siguientes: lógica simbólica, matemática discreta, algoritmos, sistemas operativos, bases \
-                        de datos e ingeniería de software por su impacto e importancia en mi formación profesional.",
+      about_me_text0 : "Soy estudiante de ingeniería de la computación en la universidad más prestigiosa de Venezuela, la <a href='http://www.usb.ve'>Universidad Simón Bolívar (USB)</a>. Me encuentro en el cuarto año, \
+                        de los cinco que componen la carrera, y a la fecha he cursado multitud de asignaturas geniales, entre las cuales puedo resaltar las siguientes: lógica simbólica, matemática discreta, algoritmos,\
+                        sistemas operativos, bases de datos e ingeniería de software por su impacto e importancia en mi formación profesional.",
       about_me_text1 : "Es un honor para mí estudiar en una universidad con tan alto grado de excelencia educativa, sobre todo considerando las circunstancias presentes en donde vivo. Sin embargo, mis ansias de \
                         conocimiento no quedan satisfechas sólo con lo que aprendo allí y es por eso que he crecido enormemente como desarrollador siendo autodidacta y participando en numerosos proyectos y eventos.",
       about_me_text2 : "Mi búsqueda de conocimiento me ha llevado al mundo laboral mediante el desarrollo web, en el cual he estado especializándome desde hace un tiempo, en especial en la rama del front-end, sin \
@@ -146,9 +146,9 @@ cserradag96.config(function($stateProvider, $urlRouterProvider, $locationProvide
 
       // About me section
       about_me       : "about me",
-      about_me_text0 : "I am a computer engineering student at Venezuela's most prestigious university, Universidad Simón Bolívar University (USB). I am currently in the fourth out of five years that make up the full \
-                        length of the career. To this date I have approved many great subjects. However, the most relevant ones to me, because of the impact and importance they have had in my professional training are \
-                        the following: symbolic logic, discrete mathematics, algorithms, operating systems, databases and software engineering.",
+      about_me_text0 : "I am a computer engineering student at Venezuela's most prestigious university, <a href='http://www.usb.ve'>Universidad Simón Bolívar (USB)</a>. I am currently in the fourth out of five years \
+                        that make up the full length of the career. To this date I have approved many great subjects. However, the most relevant ones to me, because of the impact and importance they have had in my \
+                        professional training are the following: symbolic logic, discrete mathematics, algorithms, operating systems, databases and software engineering.",
       about_me_text1 : "It is an honor to me being a student at a university which demands such high level of academic excellence, especially when taking into consideration the current situation the country where I \
                         live in is undergoing. However valuable what I have learned there, it does not fully quench my thirst for knowledge, which is why I have come to acquire the necessary information to become a \
                         developer, mostly by being self-taught and through participating in numerous projects and events.",
