@@ -76,7 +76,7 @@ const
 /*---------------------------------------------------------------------------------------------------------------------
 - Delete older css
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('cleanCSS', function () {
+gulp.task('cleanCSS', function() {
   return gulp.src(distCSS, {read: false})
     .pipe(cleanFiles());
 });
@@ -84,7 +84,7 @@ gulp.task('cleanCSS', function () {
 /*---------------------------------------------------------------------------------------------------------------------
 - Delete older views
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('cleanHTML', function () {
+gulp.task('cleanHTML', function() {
   return gulp.src(distHTML, {read: false})
     .pipe(cleanFiles());
 });
@@ -92,7 +92,7 @@ gulp.task('cleanHTML', function () {
 /*---------------------------------------------------------------------------------------------------------------------
 - Delete older images
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('cleanIMG', function () {
+gulp.task('cleanIMG', function() {
   return gulp.src(distIMG, {read: false})
     .pipe(cleanFiles());
 });
@@ -100,7 +100,7 @@ gulp.task('cleanIMG', function () {
 /*---------------------------------------------------------------------------------------------------------------------
 - Delete older js
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('cleanJS', function () {
+gulp.task('cleanJS', function() {
   return gulp.src(distJS, {read: false})
     .pipe(cleanFiles());
 });
@@ -108,7 +108,7 @@ gulp.task('cleanJS', function () {
 /*---------------------------------------------------------------------------------------------------------------------
 - Transform angular modules and controllers with babel
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('annotate', function () {
+gulp.task('annotate', function() {
   return gulp.src(srcApp + '**/*.js')
     .pipe(babel(options['babel']))
     .pipe(gulp.dest(tmpJS));
@@ -117,7 +117,7 @@ gulp.task('annotate', function () {
 /*---------------------------------------------------------------------------------------------------------------------
 - Sass compile
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('compileSCSS', function () {
+gulp.task('compileSCSS', function() {
   return gulp.src(srcCSS + 'guikifix/guikifix.scss')
     .pipe(compileSCSS().on('error', compileSCSS.logError))
     .pipe(gulp.dest(srcCSS + 'guikifix/'));
@@ -126,7 +126,7 @@ gulp.task('compileSCSS', function () {
 /*---------------------------------------------------------------------------------------------------------------------
 - CSS concat and minify
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('minCSS', ['compileSCSS', 'cleanCSS'], function () {
+gulp.task('minCSS', ['compileSCSS', 'cleanCSS'], function() {
   return gulp.src([
       srcCSS + 'bootstrap/bootstrap.min.css',
       srcCSS + 'guikifix/guikifix.css'
@@ -150,7 +150,7 @@ gulp.task('replaceHTML', function() {
 /*---------------------------------------------------------------------------------------------------------------------
 - Views minify
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('minViews', ['cleanHTML'], function () {
+gulp.task('minViews', ['cleanHTML'], function() {
   return gulp.src(srcHTML + '**/*.html')
     .pipe(minHTML(options['minHTML']))
     .pipe(gulp.dest(distHTML));
@@ -159,7 +159,7 @@ gulp.task('minViews', ['cleanHTML'], function () {
 /*---------------------------------------------------------------------------------------------------------------------
 - Index minify
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('minIndex', ['replaceHTML'], function () {
+gulp.task('minIndex', ['replaceHTML'], function() {
   return gulp.src(tmpDir + 'index.html')
     .pipe(minHTML(options['minHTML']))
     .pipe(gulp.dest(distDir));
@@ -168,7 +168,7 @@ gulp.task('minIndex', ['replaceHTML'], function () {
 /*---------------------------------------------------------------------------------------------------------------------
 - HTML minify
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('minHTML', ['minViews', 'minIndex'], function () {
+gulp.task('minHTML', ['minViews', 'minIndex'], function() {
   return gulp.src(tmpDir + 'index.html', {read: false})
     .pipe(cleanFiles());
 });
@@ -185,7 +185,7 @@ gulp.task('minIMG', ['cleanIMG'], function() {
 /*---------------------------------------------------------------------------------------------------------------------
 - JS concat and minify
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('minJS', ['annotate', 'cleanJS'], function () {
+gulp.task('minJS', ['annotate', 'cleanJS'], function() {
   return gulp.src([
     srcJS + 'jquery/jquery.min.js',        // jQuery 3.2.1
     srcJS + 'bootstrap/bootstrap.min.js',  // Bootstrap 3.3.7
@@ -204,7 +204,7 @@ gulp.task('minJS', ['annotate', 'cleanJS'], function () {
 /*---------------------------------------------------------------------------------------------------------------------
 - Build
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('build', ['minCSS', 'minHTML', 'minIMG', 'minJS'], function () {
+gulp.task('build', ['minCSS', 'minHTML', 'minIMG', 'minJS'], function() {
   return gulp.src(tmpDir, {read: false})
     .pipe(cleanFiles())
 });
@@ -247,14 +247,14 @@ gulp.task('watchJS', function() {
 /*---------------------------------------------------------------------------------------------------------------------
 - Starts a develop server
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('dev', ['compileSCSS', 'watchSCSS'], function () {
+gulp.task('dev', ['compileSCSS', 'watchSCSS'], function() {
   connect.server({root: srcDir, hostname: 'localhost', port: 4224});
 });
 
 /*---------------------------------------------------------------------------------------------------------------------
 - Starts a production server
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('prod', ['build', 'watchSCSS', 'watchCSS', 'watchHTML', 'watchIMG', 'watchJS'], function () {
+gulp.task('prod', ['build', 'watchSCSS', 'watchCSS', 'watchHTML', 'watchIMG', 'watchJS'], function() {
   connect.server({root: distDir, hostname: 'localhost', port: 4224});
 });
 
