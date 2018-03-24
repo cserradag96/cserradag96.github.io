@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="cserradag96">
+<html ng-app="portfolio">
   <head>
     <!-- Meta-tags -->
       <!-- Charters encoding -->
@@ -65,25 +65,46 @@
       <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
     <!-- /Fonts -->
 
+    <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- /Icons -->
+
     <!-- Styles -->
       <!-- build:css -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/please-wait/please-wait.css">
       <link rel="stylesheet" href="assets/css/please-wait/three-bounce.css">
-      <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/custom/custom.min.css">
       <!-- endbuild -->
     <!-- /Styles -->
 
     <!-- Scripts -->
-      <script src="static/js/shared/google/analytics.js"></script>
+      <!-- Google analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-100685306-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+      <!-- /Google analytics -->
+
+      <!-- Please wait -->
+      <script src="./assets/js/please-wait/please-wait.min.js"></script>
     <!-- /Scripts -->
   </head>
 
   <body ng-controller="MainController" ng-cloak>
     <!-- Start please wait window  -->
-      <script src="assets/js/please-wait/please-wait.min.js"></script>
-      <script src="assets/js/please-wait/start-please-wait.js"></script>
+      <script>
+        var loading_screen = pleaseWait({
+          logo: "assets/img/logo.png",
+          backgroundColor: '#2196F3',
+          loadingHtml: '<div class="sk-three-bounce"><div class="sk-child sk-bounce1"></div><div class="sk-child sk-bounce2"></div><div class="sk-child sk-bounce3"></div></div>'
+        });
+      </script>
     <!-- /Start please wait window  -->
 
     <!-- Views -->
@@ -113,7 +134,7 @@
       <!-- /Angular liraries -->
 
       <!-- Angular modules -->
-        <script src="app/modules/cserradag96.js"></script>
+        <script src="app/modules/portfolio.js"></script>
       <!-- /Angular modules -->
 
       <!-- Angular controllers -->
@@ -124,10 +145,9 @@
       <!-- Site Scripts -->
         <script src="assets/js/custom/main.js"></script>
       <!-- /Site Scripts -->
-
-      <!-- Finish please wait window -->
-        <script src="assets/js/please-wait/finish-please-wait.js"></script>
-      <!-- /Finish please wait window -->
     <!-- endbuild -->
+
+    <!-- Finish please wait window -->
+    <script>setTimeout(function(){loading_screen.finish(true);}, 2500);</script>
   </body>
 </html>

@@ -48,7 +48,7 @@
   <div class="container-fluid section-content reveal">
     <div class="col-md-4 col-xs-12 center-content">
       <div class="img-container">
-        <img class="img-large" src="static/img/about_me/self.jpg">
+        <img class="img-large" ng-src="{{ imgPath }}about_me/self.jpg">
         <span><i class="fa fa-camera" aria-hidden="true"></i> Carlos Serrada</span>
       </div>
     </div>
@@ -82,30 +82,78 @@
       </div>
     </div>
     <div class="col-md-4 center-content">
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Python"><img src="static/img/skills/python.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Ruby"><img src="static/img/skills/ruby.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Java"><img src="static/img/skills/java.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="C"><img src="static/img/skills/c.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="C++"><img src="static/img/skills/c-plus-plus.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Bash"><img src="static/img/skills/bash.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="JavaScript"><img src="static/img/skills/javascript.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="HTML"><img src="static/img/skills/html-5.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="CSS"><img src="static/img/skills/css-3.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="AngularJS"><img src="static/img/skills/angular.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Bootstrap"><img src="static/img/skills/bootstrap.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="jQuery"><img src="static/img/skills/jquery.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Django"><img src="static/img/skills/django.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Qt"><img src="static/img/skills/qt.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="PostgreSQL"><img src="static/img/skills/postgre-sql.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Git"><img src="static/img/skills/git.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Github"><img src="static/img/skills/github.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Bitbucket"><img src="static/img/skills/bitbucket.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Gitlab"><img src="static/img/skills/gitlab.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Linux"><img src="static/img/skills/linux.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Windows"><img src="static/img/skills/windows.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Gimp"><img src="static/img/skills/gimp.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Inkscape"><img src="static/img/skills/inkscape.png"></div>
-      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Microsoft Office"><img src="static/img/skills/ms-office.png"></div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Python">
+        <img ng-src="{{ imgPath }}skills/python.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Ruby">
+        <img ng-src="{{ imgPath }}skills/ruby.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Java">
+        <img ng-src="{{ imgPath }}skills/java.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="C">
+        <img ng-src="{{ imgPath }}skills/c.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="C++">
+        <img ng-src="{{ imgPath }}skills/c-plus-plus.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Bash">
+        <img ng-src="{{ imgPath }}skills/bash.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="JavaScript">
+        <img ng-src="{{ imgPath }}skills/javascript.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="HTML">
+        <img ng-src="{{ imgPath }}skills/html-5.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="CSS">
+        <img ng-src="{{ imgPath }}skills/css-3.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="AngularJS">
+        <img ng-src="{{ imgPath }}skills/angular.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Bootstrap">
+        <img ng-src="{{ imgPath }}skills/bootstrap.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="jQuery">
+        <img ng-src="{{ imgPath }}skills/jquery.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Django">
+        <img ng-src="{{ imgPath }}skills/django.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Qt">
+        <img ng-src="{{ imgPath }}skills/qt.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="PostgreSQL">
+        <img ng-src="{{ imgPath }}skills/postgre-sql.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Git">
+        <img ng-src="{{ imgPath }}skills/git.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Github">
+        <img ng-src="{{ imgPath }}skills/github.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Bitbucket">
+        <img ng-src="{{ imgPath }}skills/bitbucket.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Gitlab">
+        <img ng-src="{{ imgPath }}skills/gitlab.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Linux">
+        <img ng-src="{{ imgPath }}skills/linux.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Windows">
+        <img ng-src="{{ imgPath }}skills/windows.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Gimp">
+        <img ng-src="{{ imgPath }}skills/gimp.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Inkscape">
+        <img ng-src="{{ imgPath }}skills/inkscape.png">
+      </div>
+      <div class="img-container" data-toggle="tooltip" data-placement="top" title="Microsoft Office">
+        <img ng-src="{{ imgPath }}skills/ms-office.png">
+      </div>
     </div>
   </div>
 </section>
@@ -137,7 +185,7 @@
   <div class="container-fluid section-content center-content">
     <div class="flip-img">
       <figure>
-        <img src="static/img/projects/guikifix.png">
+        <img ng-src="{{ imgPath }}projects/guikifix.png">
         <figcaption>
             <h2 translate="project_title0"></h2>
             <p translate="project_text0"></p>
@@ -146,7 +194,7 @@
     </div>
     <div class="flip-img">
       <figure>
-        <img src="static/img/projects/inea-tugs.png">
+        <img ng-src="{{ imgPath }}projects/inea-tugs.png">
         <figcaption>
             <h2 translate="project_title1"></h2>
             <p translate="project_text1"></p>
@@ -155,7 +203,7 @@
     </div>
     <div class="flip-img">
       <figure>
-        <img src="static/img/projects/apolo.png">
+        <img ng-src="{{ imgPath }}projects/apolo.png">
         <figcaption>
             <h2 translate="project_title2"></h2>
             <p translate="project_text2"></p>
@@ -164,7 +212,7 @@
     </div>
     <div class="flip-img">
       <figure>
-        <img src="static/img/projects/sigpae.png">
+        <img ng-src="{{ imgPath }}projects/sigpae.png">
         <figcaption>
             <h2 translate="project_title3"></h2>
             <p translate="project_text3"></p>
@@ -173,7 +221,7 @@
     </div>
     <div class="flip-img">
       <figure>
-        <img src="static/img/projects/ceic-suite.png">
+        <img ng-src="{{ imgPath }}projects/ceic-suite.png">
         <figcaption>
             <h2 translate="project_title4"></h2>
             <p translate="project_text4"></p>
@@ -182,7 +230,7 @@
     </div>
     <div class="flip-img">
       <figure>
-        <img src="static/img/projects/retyna.png">
+        <img ng-src="{{ imgPath }}projects/retyna.png">
         <figcaption>
             <h2 translate="project_title5"></h2>
             <p translate="project_text5"></p>
@@ -191,7 +239,7 @@
     </div>
     <div class="flip-img">
       <figure>
-        <img src="static/img/projects/pycg-player.png">
+        <img ng-src="{{ imgPath }}projects/pycg-player.png">
         <figcaption>
             <h2 translate="project_title6"></h2>
             <p translate="project_text6"></p>
@@ -200,7 +248,7 @@
     </div>
     <div class="flip-img">
       <figure>
-        <img src="static/img/projects/ular.png">
+        <img ng-src="{{ imgPath }}projects/ular.png">
         <figcaption>
             <h2 translate="project_title7"></h2>
             <p translate="project_text7"></p>

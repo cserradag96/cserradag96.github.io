@@ -118,19 +118,16 @@ gulp.task('annotate', function() {
 - Sass compile
 ---------------------------------------------------------------------------------------------------------------------*/
 gulp.task('compileSCSS', function() {
-  return gulp.src(srcCSS + 'guikifix/guikifix.scss')
+  return gulp.src(srcCSS + 'custom/custom.scss')
     .pipe(compileSCSS().on('error', compileSCSS.logError))
-    .pipe(gulp.dest(srcCSS + 'guikifix/'));
+    .pipe(gulp.dest(srcCSS + 'custom/'));
 });
 
 /*---------------------------------------------------------------------------------------------------------------------
 - CSS concat and minify
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('minCSS', ['compileSCSS', 'cleanCSS'], function() {
-  return gulp.src([
-      srcCSS + 'bootstrap/bootstrap.min.css',
-      srcCSS + 'guikifix/guikifix.css'
-  ])
+gulp.task('minCSS', ['cleanCSS'], function() {
+  return gulp.src([srcCSS + '**/*.css'])
     .pipe(prefixer().on('error', function(e){console.log(e);}))
     .pipe(concatCSS("bundle.css"))
     .pipe(minCSS({keepBreaks:false}))
@@ -177,23 +174,35 @@ gulp.task('minHTML', ['minViews', 'minIndex'], function() {
 - Images minify
 ---------------------------------------------------------------------------------------------------------------------*/
 gulp.task('minIMG', ['cleanIMG'], function() {
-  return gulp.src(srcIMG + '*')
+  return gulp.src(srcIMG + '**/*')
     .pipe(minIMG())
     .pipe(gulp.dest(distIMG));
 });
 
 /*---------------------------------------------------------------------------------------------------------------------
+- Copy JS dependencies
+---------------------------------------------------------------------------------------------------------------------*/
+gulp.task('copyJS', ['cleanJS'], function() {
+  return gulp.src([
+    srcJS + 'please-wait/please-wait.min.js'  // Please-wait
+  ])
+    .pipe(gulp.dest(distJS + 'please-wait/'));
+});
+
+/*---------------------------------------------------------------------------------------------------------------------
 - JS concat and minify
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('minJS', ['annotate', 'cleanJS'], function() {
+gulp.task('minJS', ['annotate', 'copyJS'], function() {
   return gulp.src([
-    srcJS + 'jquery/jquery.min.js',        // jQuery 3.2.1
-    srcJS + 'bootstrap/bootstrap.min.js',  // Bootstrap 3.3.7
-    srcJS + 'angular/angular.min.js',      // Angular
-    srcJS + 'angular/plugins/*.js',        // Angular plugins
-    tmpJS + 'modules/*.js',                   // Angular modules
-    tmpJS + 'controllers/*.js',               // Angular controllers
-    tmpJS + 'directives/*.js'                 // Angular directives
+    srcJS + 'jquery/jquery.min.js',             // jQuery
+    srcJS + 'bootstrap/bootstrap.min.js',       // Bootstrap
+    srcJS + 'scrollreveal/scrollreveal.min.js', // Scrollreveal
+    srcJS + 'angular/angular.min.js',           // Angular
+    srcJS + 'angular/plugins/*.js',             // Angular plugins
+    tmpJS + 'modules/*.js',                     // Angular modules
+    tmpJS + 'controllers/*.js',                 // Angular controllers
+    tmpJS + 'directives/*.js',                  // Angular directives
+    srcJS + 'custom/main.js'                    // Custom script
   ])
     .pipe(concatJS('bundle.js'))
     .pipe(minJS().on('error', function(e){console.log(e);}))

@@ -1,7 +1,7 @@
 {
-  "name": "guikifix",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "guikifix",
+  "description": "portfolio",
   "scripts": {
     "postinstall": "npm install -g gulp@3.9.1"
   },
@@ -36,16 +36,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://cserradag96@bitbucket.org/guikifixxd/frontend.git"
+    "url": "https://github.com/cserradag96/cserradag96.github.io"
   },
   "keywords": [
     "angular",
     "rest"
   ],
   "author": "Carlos Serrada <cserradag96@gmail.com> (cserradag96.github.io)",
-  "contributors": [
-    "Juan Ortiz <ortiz.juan14@gmail.com>"
-  ],
   "license": "UNLICENSED",
   "private": true
 }
