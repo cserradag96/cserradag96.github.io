@@ -1,0 +1,51 @@
+{
+  "name": "guikifix",
+  "version": "1.0.0",
+  "description": "guikifix",
+  "scripts": {
+    "postinstall": "npm install -g gulp@3.9.1"
+  },
+  "devDependencies": {
+    "babel-install": "^2.1.0",
+    "babel-plugin-angularjs-annotate": "^0.8.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gifsicle": "^3.0.4",
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify-es": "^0.1.3",
+    "jpegtran-bin": "^3.2.0",
+    "minimatch": "^3.0.2",
+    "node-gyp": "^3.6.2",
+    "node-sass": "^4.5.3",
+    "optipng-bin": "^4.0.0",
+    "svgo": "^0.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://cserradag96@bitbucket.org/guikifixxd/frontend.git"
+  },
+  "keywords": [
+    "angular",
+    "rest"
+  ],
+  "author": "Carlos Serrada <cserradag96@gmail.com> (cserradag96.github.io)",
+  "contributors": [
+    "Juan Ortiz <ortiz.juan14@gmail.com>"
+  ],
+  "license": "UNLICENSED",
+  "private": true
+}
