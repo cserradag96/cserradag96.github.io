@@ -233,7 +233,7 @@
     });
 
     // Default language
-    $translateProvider.preferredLanguage('es');
+    $translateProvider.preferredLanguage('en');
 
     // Mark as safe
     $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
@@ -251,7 +251,7 @@
   # INITIAL GLOBAL SETTINGS
   ###################################################################################################################*/
   portfolio.run(['$rootScope', function ($rootScope) {
-    $rootScope.lang     = 'es';                                             /* Default lenguage */
+    $rootScope.lang     = 'en';                                             /* Default lenguage */
     $rootScope.baseURL  = "https://cserradag96.github.io/";                 /* Server domain */
     $rootScope.grcAPI   = "https://www.google.com/recaptcha/api/siteverify" /* Google recaptcha api */
     $rootScope.rootPath = "./assets/";                                      /* Root path */

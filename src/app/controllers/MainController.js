@@ -12,7 +12,7 @@
     $scope.changeLang = function() {
       if ($rootScope.lang =='es') { $rootScope.lang = 'en'; }
       else { $rootScope.lang = 'es'; };
-      $scope.resume = $rootScope.baseURL + 'static/files/resume/' + $rootScope.lang + '.pdf';
+      $scope.resume = $rootScope.baseURL + 'assets/files/resume/' + $rootScope.lang + '.pdf';
       $translate.use($rootScope.lang);
     };
 
