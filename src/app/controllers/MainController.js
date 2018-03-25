@@ -24,6 +24,6 @@
     /*-----------------------------------------------------------------------------------------------------------------
     - VIEW CONFIGURATION
     -----------------------------------------------------------------------------------------------------------------*/
-    $scope.resume = $rootScope.baseURL + 'static/files/resume/' + $rootScope.lang + '.pdf';
+    $scope.resume = $rootScope.baseURL + 'assets/files/resume/' + $rootScope.lang + '.pdf';
   }]);
 })();
