@@ -35,6 +35,7 @@ const
   distCSS    = distAssets + 'css/',
   distIMG    = distAssets + 'img/',
   distJS     = distAssets + 'js/',
+  distFiles  = distAssets + 'files/',
   srcDir     = './src/',
   srcApp     = srcDir + 'app/',
   srcAssets  = srcDir + 'assets/',
@@ -42,6 +43,7 @@ const
   srcCSS     = srcAssets + 'css/',
   srcIMG     = srcAssets + 'img/',
   srcJS      = srcAssets + 'js/',
+  srcFiles   = srcAssets + 'files/',
   tmpDir     = './tmp/',
   tmpJS      = tmpDir + 'js/';
 
@@ -103,6 +105,32 @@ gulp.task('cleanIMG', function() {
 gulp.task('cleanJS', function() {
   return gulp.src(distJS, {read: false})
     .pipe(cleanFiles());
+});
+
+/*---------------------------------------------------------------------------------------------------------------------
+- Delete older files
+---------------------------------------------------------------------------------------------------------------------*/
+gulp.task('cleanFiles', function() {
+  return gulp.src(distFiles, {read: false})
+    .pipe(cleanFiles());
+});
+
+/*---------------------------------------------------------------------------------------------------------------------
+- Copy JS dependencies
+---------------------------------------------------------------------------------------------------------------------*/
+gulp.task('copyJS', ['cleanJS'], function() {
+  return gulp.src([
+    srcJS + 'please-wait/please-wait.min.js'  // Please-wait
+  ])
+    .pipe(gulp.dest(distJS + 'please-wait/'));
+});
+
+/*---------------------------------------------------------------------------------------------------------------------
+- Copy Files
+---------------------------------------------------------------------------------------------------------------------*/
+gulp.task('copyFiles', ['cleanFiles'], function() {
+  return gulp.src([srcFiles + '**/*'])
+    .pipe(gulp.dest(distFiles));
 });
 
 /*---------------------------------------------------------------------------------------------------------------------
@@ -180,16 +208,6 @@ gulp.task('minIMG', ['cleanIMG'], function() {
 });
 
 /*---------------------------------------------------------------------------------------------------------------------
-- Copy JS dependencies
----------------------------------------------------------------------------------------------------------------------*/
-gulp.task('copyJS', ['cleanJS'], function() {
-  return gulp.src([
-    srcJS + 'please-wait/please-wait.min.js'  // Please-wait
-  ])
-    .pipe(gulp.dest(distJS + 'please-wait/'));
-});
-
-/*---------------------------------------------------------------------------------------------------------------------
 - JS concat and minify
 ---------------------------------------------------------------------------------------------------------------------*/
 gulp.task('minJS', ['annotate', 'copyJS'], function() {
@@ -213,7 +231,7 @@ gulp.task('minJS', ['annotate', 'copyJS'], function() {
 /*---------------------------------------------------------------------------------------------------------------------
 - Build
 ---------------------------------------------------------------------------------------------------------------------*/
-gulp.task('build', ['minCSS', 'minHTML', 'minIMG', 'minJS'], function() {
+gulp.task('build', ['minCSS', 'minHTML', 'minIMG', 'minJS', 'copyFiles'], function() {
   return gulp.src(tmpDir, {read: false})
     .pipe(cleanFiles())
 });
